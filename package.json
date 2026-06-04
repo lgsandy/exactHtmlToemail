@@ -1,0 +1,16 @@
+{
+  "name": "exact-html-to-email-gen",
+  "version": "1.0.0",
+  "description": "Extract design tokens and generate marketing emails from pharma HTML templates",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ai": "^3.1.30",
+    "@ai-sdk/azure": "^0.0.12",
+    "zod": "^3.23.8",
+    "dotenv": "^16.4.5"
+  }
+}
