@@ -1,0 +1,285 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Arial, sans-serif" />
+      <mj-text font-size="13px" line-height="15px" color="#000000" padding="0px 25px" />
+      <mj-section padding="20px 0" />
+      <mj-button background-color="#CF0A2C" color="#ffffff" border-radius="3px" padding="10px 25px" font-size="13px" font-weight="normal" align="center" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .hero-title {
+        font-size: 23px;
+        line-height: 1;
+        color: #000000;
+        font-weight: normal;
+      }
+      .h2-red {
+        font-size: 14px;
+        line-height: 17px;
+        color: #CF0A2C;
+        font-weight: 700;
+      }
+      .h3-black {
+        font-size: 12px;
+        line-height: 15px;
+        color: #000000;
+        font-weight: normal;
+      }
+      .bullet-list {
+        padding-left: 0;
+        margin: 0;
+      }
+      .bullet-list li {
+        margin: 0 0 4px 0;
+      }
+      .desktop-only {
+        display: block;
+      }
+      .mobile-only {
+        display: none;
+      }
+      @media only screen and (max-width:480px) {
+        .desktop-only {
+          display: none !important;
+          height: 0 !important;
+          overflow: hidden !important;
+        }
+        .mobile-only {
+          display: block !important;
+        }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body width="600" background-color="#ffffff">
+    <!-- hero_banner -->
+    <mj-section background-color="#ffffff" padding="20px 0 20px 0" background-url="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/bg-1760607403292-1770358489191-1770366913367-1776398001082-1776501869027.png" background-size="cover" background-repeat="no-repeat">
+      <mj-column width="100%">
+        <mj-text css-class="hero-title" padding="40px 25px 20px 25px">
+          Información médica y bibliografía de BIKTARVY<sup>®</sup> para profesionales
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- greeting_text -->
+    <mj-section background-color="#ffffff" padding="20px 0 20px 0">
+      <mj-column width="100%">
+        <mj-text>
+          Estimado Dr./Dra {{accLname}},
+        </mj-text>
+        <mj-text>
+          Nos complace compartir con usted una actualización reciente de los datos clínicos de BIKTARVY<sup>®</sup>, con especial foco en la experiencia y satisfacción de los pacientes en tratamiento antirretroviral (TAR).
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- claim_1 -->
+    <mj-section background-color="#ffffff" padding="0px 0 0px 0">
+      <mj-column width="100%">
+        <mj-text css-class="h2-red">
+          BIKTARVY es el TAR mejor valorado por los pacientes en términos de satisfacción global
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- subclaim_1 -->
+    <mj-section background-color="#ffffff" padding="0px 0 0px 0">
+      <mj-column width="100%">
+        <mj-text>
+          En un estudio observacional reciente, los pacientes en TAR evaluaron su tratamiento utilizando el cuestionario HIVTSQ (HIV Treatment Satisfaction Questionnaire), una herramienta validada que mide la satisfacción global con el tratamiento, la comodidad de la pauta y la percepción de eficacia y tolerabilidad.
+        </mj-text>
+        <mj-text>
+          Los pacientes tratados con BIKTARVY mostraron puntuaciones medias de HIVTSQ superiores frente a otros regímenes de referencia, lo que sugiere una mayor satisfacción con su tratamiento diario.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- image_hivtsq -->
+    <mj-section background-color="#ffffff" padding="0px 0 0px 0">
+      <mj-column width="100%">
+        <mj-image src="https://d34j9aw1sdq1f5.cloudfront.net/components/7dc9ca68-ec23-46d0-9a60-cad21fc97534/44aee567-50ab-4afc-9bd5-911b18666a9c/17808_1_0.png" width="550" padding="10px 25px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- claim_2 -->
+    <mj-section background-color="#CF0A2C" padding="5px 25px">
+      <mj-column width="100%">
+        <mj-text color="#edebe3" font-size="13px" line-height="15px" padding="0">
+          BIKTARVY se asocia a una menor probabilidad de cambio de tratamiento frente a otros regímenes de TAR
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- subclaim_2 -->
+    <mj-section background-color="#ffffff" padding="0px 0 0px 0">
+      <mj-column width="100%">
+        <mj-text>
+          En el análisis de tiempo hasta el cambio de tratamiento, se compararon tres regímenes de TAR de uso habitual en la práctica clínica. El objetivo fue evaluar la persistencia terapéutica y la necesidad de modificar el tratamiento por falta de eficacia, problemas de tolerabilidad u otras causas clínicas.
+        </mj-text>
+        <mj-text>
+          Los pacientes en tratamiento con BIKTARVY presentaron un tiempo más prolongado hasta el cambio de TAR en comparación con los regímenes evaluados, lo que respalda su uso como opción estable y duradera en el manejo de las personas con VIH.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- image_time_to_switch -->
+    <mj-section background-color="#ffffff" padding="0px 0 0px 0">
+      <mj-column width="100%">
+        <mj-image src="https://d34j9aw1sdq1f5.cloudfront.net/components/fc83288b-1c11-4055-a1ad-e64292363ddc/63596b2c-2ddf-4292-a096-03fb63f21eed/18218_1_0.png" width="550" padding="10px 25px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- subclaim_3 -->
+    <mj-section background-color="#ffffff" padding="0px 0 0px 0">
+      <mj-column width="100%">
+        <mj-text>
+          Asimismo, el análisis del riesgo de cambio de tratamiento mostró que los pacientes tratados con BIKTARVY tenían una menor probabilidad relativa de modificar su TAR frente a los regímenes comparadores, tanto por motivos de eficacia como de seguridad.
+        </mj-text>
+        <mj-text>
+          Estos resultados refuerzan el perfil de BIKTARVY como una opción de tratamiento completa en un solo comprimido, con alta satisfacción del paciente y una elevada persistencia terapéutica en la práctica clínica real.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- image_risk_switch -->
+    <mj-section background-color="#ffffff" padding="0px 0 0px 0">
+      <mj-column width="100%">
+        <mj-image src="https://d34j9aw1sdq1f5.cloudfront.net/components/fc83288b-1c11-4055-a1ad-e64292363ddc/8a82af51-1f9c-4164-860c-47b77ac2bd46/18199_1_0.png" width="550" padding="10px 25px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- primary_cta -->
+    <mj-section background-color="#ffffff" padding="20px 0 20px 0">
+      <mj-column width="100%">
+        <mj-button href="https://www.gilead.com" background-color="#CF0A2C" color="#ffffff" border-radius="3px" padding="10px 25px" font-size="13px" font-weight="normal" align="center">
+          Más información sobre los datos clínicos de BIKTARVY
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- divider_top -->
+    <mj-section background-color="#ffffff" padding="0px 0 0px 0">
+      <mj-column width="100%">
+        <mj-divider border-color="#cf0a2b" border-width="2px" padding="0px 25px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- logo_strip_desktop -->
+    <mj-section background-color="#ffffff" padding="20px 0 5px 0" css-class="desktop-only">
+      <mj-column width="50%">
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/70af4d47b795_78e7639f6139_ae1ab5ee8b53_biktarvy_logo.png" width="149" padding="0px 25px" align="left" />
+      </mj-column>
+      <mj-column width="50%">
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/84c8e4925344_d4e7c662e705_028ad8eed8a2_050793a13eec_download.png" width="149" padding="0px 25px" align="right" />
+      </mj-column>
+    </mj-section>
+
+    <!-- logo_strip_mobile -->
+    <mj-section background-color="#ffffff" padding="20px 0 5px 0" css-class="mobile-only">
+      <mj-column width="100%">
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/70af4d47b795_78e7639f6139_ae1ab5ee8b53_biktarvy_logo.png" width="250" padding="0px 25px 5px 25px" align="center" />
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/84c8e4925344_d4e7c662e705_028ad8eed8a2_050793a13eec_download.png" width="250" padding="0px 25px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- gilead_pro_section -->
+    <mj-section background-color="#ffffff" padding="10px 0 10px 0">
+      <mj-column width="100%">
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/1bc1b12caa4f_19df42e3c070_89b901d5e902_gilead_pro.png" width="550" padding="0px 25px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- footnote_1 -->
+    <mj-section background-color="#ffffff" padding="5px 0 5px 0">
+      <mj-column width="100%">
+        <mj-text css-class="h3-black">
+          <strong>Notas sobre el cuestionario HIVTSQ y los datos del estudio</strong><br />
+          El HIV Treatment Satisfaction Questionnaire (HIVTSQ) es un cuestionario validado que evalúa la satisfacción con el tratamiento antirretroviral en múltiples dominios, incluyendo:
+        </mj-text>
+        <mj-text css-class="h3-black">
+          <ul class="bullet-list">
+            <li>Satisfacción global con el tratamiento.</li>
+            <li>Facilidad de uso y comodidad de la pauta.</li>
+            <li>Percepción de eficacia y control de la infección por VIH.</li>
+            <li>Tolerabilidad y presencia de efectos adversos percibidos.</li>
+          </ul>
+        </mj-text>
+        <mj-text css-class="h3-black">
+          En el estudio citado, se incluyeron pacientes adultos con infección por VIH-1 en tratamiento estable. Las puntuaciones de HIVTSQ se recogieron en un momento determinado de la práctica clínica habitual y se compararon entre diferentes regímenes de TAR, incluyendo BIKTARVY y otros tratamientos de referencia.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- footnote_2 -->
+    <mj-section background-color="#ffffff" padding="5px 0 5px 0">
+      <mj-column width="100%">
+        <mj-text css-class="h3-black">
+          <strong>Abreviaturas</strong><br />
+          TAR: tratamiento antirretroviral.<br />
+          HIVTSQ: HIV Treatment Satisfaction Questionnaire.<br />
+          VIH: virus de la inmunodeficiencia humana.<br />
+          IC: intervalo de confianza.<br />
+          HR: hazard ratio (cociente de riesgos).
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- footnote_3 -->
+    <mj-section background-color="#ffffff" padding="5px 0 5px 0">
+      <mj-column width="100%">
+        <mj-text css-class="h3-black">
+          <strong>Bibliografía seleccionada</strong><br />
+          1. Datos de estudio observacional de práctica clínica real que evalúan la satisfacción con el tratamiento mediante HIVTSQ en pacientes con VIH tratados con BIKTARVY y otros regímenes de TAR. Datos en archivo, Gilead Sciences.<br />
+          2. Ensayos clínicos pivotales de BIKTARVY en pacientes naïve y pretratados que demuestran eficacia virológica mantenida y un perfil de seguridad favorable. Consulte la ficha técnica para información detallada.<br />
+          3. Guías clínicas nacionales e internacionales sobre el manejo del VIH que incluyen BIKTARVY como opción recomendada en determinados escenarios clínicos.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- gilead_logo_section -->
+    <mj-section background-color="#ffffff" padding="10px 0 10px 0">
+      <mj-column width="100%">
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/34f28675a572_588f5d96092d_858ffba93ad3_gilead_logo.png" width="120" padding="0px 25px" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- medical_info_block -->
+    <mj-section background-color="#e4e4e4" padding="15px 25px 5px 25px">
+      <mj-column width="100%">
+        <mj-text font-size="13px" line-height="15px" color="#000000" padding="0">
+          <strong>Información de prescripción y consultas médicas</strong><br />
+          Para consultar la información de prescripción completa de BIKTARVY, incluyendo indicaciones, posología, contraindicaciones y advertencias, visite el portal de Gilead o contacte con el departamento de Información Médica.
+        </mj-text>
+        <mj-text font-size="13px" line-height="15px" color="#000000" padding="5px 0 0 0">
+          <strong>Contacto de Información Médica:</strong><br />
+          Tel.: +34 XXX XXX XXX<br />
+          Correo electrónico: <a href="mailto:informacion.medica@gilead.com" style="color:#CF0A2C; text-decoration:underline;">informacion.medica@gilead.com</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- pharmacovigilance_block -->
+    <mj-section background-color="#e4e4e4" padding="10px 25px 10px 10px">
+      <mj-column width="20%">
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/c89966fe2a64_0c1df1766ca1_af0b5d88ea22_barcode.gif" width="59" padding="0px 10px" align="center" />
+      </mj-column>
+      <mj-column width="80%">
+        <mj-text font-size="13px" line-height="15px" color="#000000" padding="0">
+          <strong>Notificación de sospechas de reacciones adversas</strong><br />
+          La notificación de sospechas de reacciones adversas tras la autorización del medicamento es importante. Permite una supervisión continuada de la relación beneficio/riesgo del medicamento. Se invita a los profesionales sanitarios a notificar cualquier sospecha de reacción adversa a través del sistema nacional de farmacovigilancia o del departamento de Farmacovigilancia de Gilead.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- legal_footer -->
+    <mj-section background-color="#edebe3" padding="0px 0 0px 0">
+      <mj-column width="100%">
+        <mj-text font-size="10px" line-height="15px" color="#000000" padding="10px 25px" align="left">
+          Este correo electrónico está dirigido exclusivamente a profesionales sanitarios. La información contenida en este mensaje tiene carácter científico y está destinada a apoyar la toma de decisiones clínicas basadas en la evidencia disponible.<br /><br />
+          Si no desea seguir recibiendo comunicaciones electrónicas de Gilead, puede ejercer sus derechos de acceso, rectificación, supresión y oposición, así como otros derechos reconocidos por la normativa de protección de datos, a través de los canales indicados en nuestra política de privacidad.<br /><br />
+          © Gilead Sciences. Todos los derechos reservados.
+        </mj-text>
+        <mj-divider border-color="#cf0a2b" border-width="2px" padding="0px 25px 10px 25px" />
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

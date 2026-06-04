@@ -2,13 +2,14 @@
   "brandName": "BIKTARVY",
   "colors": {
     "primaryColor": "#CF0A2C",
-    "secondaryColor": "#e4e4e4",
-    "accentColor": "#edebe3",
+    "secondaryColor": "#edebe3",
+    "accentColor": "#e4e4e4",
     "backgroundColor": "#ffffff",
     "containerBgColor": "#ffffff",
     "textColor": "#000000",
-    "lightBgColor": "#edebe3"
+    "lightBgColor": "#e4e4e4"
   },
+  "preheader": null,
   "typography": {
     "fontFamily": "Arial, sans-serif",
     "baseFontSize": "13px",
@@ -35,13 +36,13 @@
   "layout": {
     "maxContainerWidth": "600px",
     "sectionPaddingDesktop": "20px 0",
-    "sectionPaddingMobile": "10px 0"
+    "sectionPaddingMobile": "various (commonly 10px 25px)"
   },
   "components": {
     "headerBanner": {
       "hasBanner": true,
-      "backgroundImageUrlPattern": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/bg-1760607403292-1770358489191-1770366913367-1776398001082-1776501869027.png",
-      "padding": "90px 20px 111px 0px",
+      "backgroundImageUrlPattern": "https://d936lhxp4lgiz.cloudfront.net/...bg-1760607403292-1770358489191-1770366913367-1776398001082-1776501869027.png",
+      "padding": "90px 20px 111px 0",
       "height": null,
       "titleColor": "#000000",
       "titleSize": "23px"
@@ -76,7 +77,7 @@
       "margin": "0px auto"
     },
     "footer": {
-      "backgroundColor": "#e4e4e4",
+      "backgroundColor": "#edebe3",
       "textColor": "#000000",
       "fontSize": "10px",
       "lineHeight": "15px",
@@ -97,7 +98,7 @@
       "url": "https://d34j9aw1sdq1f5.cloudfront.net/components/7dc9ca68-ec23-46d0-9a60-cad21fc97534/44aee567-50ab-4afc-9bd5-911b18666a9c/17808_1_0.png",
       "width": "550",
       "alt": null,
-      "purpose": "Chart image showing HIVTSQ patient satisfaction scores"
+      "purpose": "Chart image showing HIVTSQ scores"
     },
     {
       "id": "chart_time_to_switch",
@@ -107,46 +108,60 @@
       "purpose": "Chart image for time to treatment change"
     },
     {
-      "id": "chart_hr_risk",
+      "id": "chart_risk_switch",
       "url": "https://d34j9aw1sdq1f5.cloudfront.net/components/fc83288b-1c11-4055-a1ad-e64292363ddc/8a82af51-1f9c-4164-860c-47b77ac2bd46/18199_1_0.png",
       "width": "550",
       "alt": null,
-      "purpose": "Chart image for hazard ratio risk of treatment change"
+      "purpose": "Chart image for risk of treatment change"
     },
     {
-      "id": "logo_biktarvy",
+      "id": "biktarvy_logo_desktop",
       "url": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/70af4d47b795_78e7639f6139_ae1ab5ee8b53_biktarvy_logo.png",
       "width": "149",
       "alt": null,
-      "purpose": "Biktarvy brand logo in mid-page band"
+      "purpose": "Biktarvy logo in desktop footer strip"
     },
     {
-      "id": "icon_download",
+      "id": "download_icon_desktop",
       "url": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/84c8e4925344_d4e7c662e705_028ad8eed8a2_050793a13eec_download.png",
       "width": "149",
       "alt": null,
-      "purpose": "Download icon/button graphic"
+      "purpose": "Download icon in desktop footer strip"
     },
     {
-      "id": "banner_gileadpro",
+      "id": "biktarvy_logo_mobile",
+      "url": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/70af4d47b795_78e7639f6139_ae1ab5ee8b53_biktarvy_logo.png",
+      "width": "250",
+      "alt": null,
+      "purpose": "Biktarvy logo in mobile footer strip"
+    },
+    {
+      "id": "download_icon_mobile",
+      "url": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/84c8e4925344_d4e7c662e705_028ad8eed8a2_050793a13eec_download.png",
+      "width": "250",
+      "alt": null,
+      "purpose": "Download icon in mobile footer strip"
+    },
+    {
+      "id": "gilead_pro_banner",
       "url": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/1bc1b12caa4f_19df42e3c070_89b901d5e902_gilead_pro.png",
       "width": "550",
       "alt": null,
-      "purpose": "GileadPro promotional banner"
+      "purpose": "Gilead Pro promotional banner"
     },
     {
-      "id": "logo_gilead",
+      "id": "gilead_logo",
       "url": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/34f28675a572_588f5d96092d_858ffba93ad3_gilead_logo.png",
       "width": "120",
       "alt": null,
       "purpose": "Gilead corporate logo in footer"
     },
     {
-      "id": "icon_qr_barcode",
+      "id": "barcode_qr",
       "url": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/c89966fe2a64_0c1df1766ca1_af0b5d88ea22_barcode.gif",
       "width": "59",
       "alt": null,
-      "purpose": "QR/barcode icon for adverse reaction reporting"
+      "purpose": "Barcode/QR image for adverse reaction reporting"
     }
   ],
   "structure": [
@@ -156,7 +171,7 @@
       "backgroundColor": "#ffffff",
       "padding": "20px 0 20px 0",
       "associatedAssetId": "hero_background",
-      "contentSummary": "Hero banner with background image and main headline 'Información médica y bibliografía de BIKTARVY para profesionales'."
+      "contentSummary": "Hero banner with background image and main title 'Información médica y bibliografía de BIKTARVY® para profesionales'."
     },
     {
       "sectionId": "greeting_text",
@@ -166,40 +181,40 @@
       "contentSummary": "Personalized greeting line 'Estimado Dr./Dra {{accLname}}'."
     },
     {
-      "sectionId": "claim_patient_rating",
+      "sectionId": "claim_1",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
       "padding": "0px 0 0px 0",
-      "contentSummary": "Red headline stating BIKTARVY is the TAR best rated by patients with reference."
+      "contentSummary": "Red headline stating BIKTARVY is the TAR best rated by patients."
     },
     {
-      "sectionId": "subheadline_hivtsq",
+      "sectionId": "subclaim_1",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
       "padding": "0px 0 0px 0",
-      "contentSummary": "Subheadline introducing HIVTSQ patient evaluation question."
+      "contentSummary": "Intro text about patient evaluation and HIVTSQ score description."
     },
     {
-      "sectionId": "image_hivtsq_chart",
+      "sectionId": "image_hivtsq",
       "componentType": "image_block",
       "backgroundColor": "#ffffff",
       "padding": "0px 0 0px 0",
       "associatedAssetId": "chart_hivtsq",
-      "contentSummary": "Image of HIVTSQ patient satisfaction chart."
+      "contentSummary": "Chart image showing HIVTSQ scores."
     },
     {
-      "sectionId": "claim_treatment_change",
+      "sectionId": "claim_2",
       "componentType": "callout_box",
       "backgroundColor": "#CF0A2C",
-      "padding": "0px 0 0px 0",
-      "contentSummary": "Red callout bar stating BIKTARVY reduced probability of treatment change vs comparators."
+      "padding": "5px 25px",
+      "contentSummary": "Red callout bar about reduced probability of treatment change vs comparators."
     },
     {
-      "sectionId": "subheadline_time_to_change",
+      "sectionId": "subclaim_2",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
       "padding": "0px 0 0px 0",
-      "contentSummary": "Subheadline about time to treatment change for three common regimens."
+      "contentSummary": "Text introducing time to treatment change for three regimens."
     },
     {
       "sectionId": "image_time_to_switch",
@@ -207,22 +222,22 @@
       "backgroundColor": "#ffffff",
       "padding": "0px 0 0px 0",
       "associatedAssetId": "chart_time_to_switch",
-      "contentSummary": "Image of time to treatment change chart."
+      "contentSummary": "Chart image for time to treatment change."
     },
     {
-      "sectionId": "subheadline_risk_vs_biktarvy",
+      "sectionId": "subclaim_3",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
       "padding": "0px 0 0px 0",
-      "contentSummary": "Subheadline about risk of treatment change vs BIKTARVY with adjusted HR."
+      "contentSummary": "Text about risk of treatment change vs BIKTARVY."
     },
     {
-      "sectionId": "image_hr_risk",
+      "sectionId": "image_risk_switch",
       "componentType": "image_block",
       "backgroundColor": "#ffffff",
       "padding": "0px 0 0px 0",
-      "associatedAssetId": "chart_hr_risk",
-      "contentSummary": "Image of hazard ratio risk chart."
+      "associatedAssetId": "chart_risk_switch",
+      "contentSummary": "Chart image for risk of treatment change."
     },
     {
       "sectionId": "primary_cta",
@@ -236,82 +251,82 @@
       "componentType": "divider",
       "backgroundColor": "#ffffff",
       "padding": "0px 0 0px 0",
-      "contentSummary": "Thin red horizontal divider line."
+      "contentSummary": "Thin red divider line separating main content from logos."
     },
     {
-      "sectionId": "mid_band_logos_desktop",
+      "sectionId": "logo_strip_desktop",
       "componentType": "image_block",
       "backgroundColor": "#ffffff",
       "padding": "20px 0 5px 0",
-      "associatedAssetId": "logo_biktarvy",
-      "contentSummary": "Desktop-only band with Biktarvy logo and download icon side by side."
+      "associatedAssetId": "biktarvy_logo_desktop",
+      "contentSummary": "Desktop-only strip with Biktarvy logo and download icon."
     },
     {
-      "sectionId": "mid_band_logos_mobile",
+      "sectionId": "logo_strip_mobile",
       "componentType": "image_block",
       "backgroundColor": "#ffffff",
       "padding": "20px 0 5px 0",
-      "associatedAssetId": "logo_biktarvy",
-      "contentSummary": "Mobile-only band with stacked Biktarvy logo and download icon."
+      "associatedAssetId": "biktarvy_logo_mobile",
+      "contentSummary": "Mobile-only strip with Biktarvy logo and download icon."
     },
     {
-      "sectionId": "banner_gileadpro_section",
+      "sectionId": "gilead_pro_section",
       "componentType": "image_block",
       "backgroundColor": "#ffffff",
       "padding": "10px 0 10px 0",
-      "associatedAssetId": "banner_gileadpro",
-      "contentSummary": "Full-width GileadPro banner image."
+      "associatedAssetId": "gilead_pro_banner",
+      "contentSummary": "Gilead Pro promotional banner image."
     },
     {
-      "sectionId": "footnote_hivtsq_definition",
+      "sectionId": "footnote_1",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
       "padding": "5px 0 5px 0",
-      "contentSummary": "Footnote explaining HIVTSQ, additional monitoring, and dataset details."
+      "contentSummary": "Detailed explanatory footnote about HIVTSQ and study data."
     },
     {
-      "sectionId": "footnote_abbreviations",
+      "sectionId": "footnote_2",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
       "padding": "5px 0 5px 0",
-      "contentSummary": "Footnote defining abbreviations such as TAR, HIVTSQ, RIQ, CAB, RPV, DTG, HR."
+      "contentSummary": "Abbreviation definitions for TAR, HIVTSQ, etc."
     },
     {
-      "sectionId": "footnote_bibliography",
+      "sectionId": "footnote_3",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
       "padding": "5px 0 5px 0",
       "contentSummary": "Bibliography references for cited studies."
     },
     {
-      "sectionId": "footer_logo",
+      "sectionId": "gilead_logo_section",
       "componentType": "image_block",
       "backgroundColor": "#ffffff",
       "padding": "10px 0 10px 0",
-      "associatedAssetId": "logo_gilead",
-      "contentSummary": "Gilead corporate logo centered above footer."
+      "associatedAssetId": "gilead_logo",
+      "contentSummary": "Gilead corporate logo centered."
     },
     {
-      "sectionId": "footer_medinfo_block",
-      "componentType": "text_block",
+      "sectionId": "medical_info_block",
+      "componentType": "callout_box",
       "backgroundColor": "#e4e4e4",
-      "padding": "15px 0 5px 0",
-      "contentSummary": "Grey box with SmPC link, code ES-BVY-XXXX, and medical information contact details."
+      "padding": "15px 25px 5px 25px",
+      "contentSummary": "Grey box with link to Biktarvy prescribing information and medical information contact details."
     },
     {
-      "sectionId": "footer_qr_reporting",
-      "componentType": "text_block",
+      "sectionId": "pharmacovigilance_block",
+      "componentType": "callout_box",
       "backgroundColor": "#e4e4e4",
-      "padding": "10px 0 10px 0",
-      "associatedAssetId": "icon_qr_barcode",
-      "contentSummary": "Grey band with QR/barcode icon and text on reporting adverse reactions with links."
+      "padding": "10px 25px 10px 10px",
+      "associatedAssetId": "barcode_qr",
+      "contentSummary": "Grey bar with QR/barcode and text about reporting adverse reactions."
     },
     {
-      "sectionId": "footer_legal_disclaimer",
+      "sectionId": "legal_footer",
       "componentType": "footer",
       "backgroundColor": "#edebe3",
-      "padding": "10px 0 10px 0",
-      "contentSummary": "Legal and data protection disclaimer text with unsubscribe and data rights info plus final red divider."
+      "padding": "0px 0 0px 0",
+      "contentSummary": "Legal and data protection disclaimer text with red bottom divider."
     }
   ]
 }

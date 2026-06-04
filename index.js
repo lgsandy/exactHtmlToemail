@@ -1,6 +1,7 @@
 import { extractTokens } from './extract.js';
 import { createEmail } from './create.js';
 import { createEmail as createDesignEmail } from './design-create.js';
+import { createEmail as createMjmlEmail } from './mjml-create.js';
 import path from 'path';
 import fs from 'fs';
 
@@ -24,11 +25,19 @@ Commands:
                 Usage: node index.js design-create <path-to-tokens-json> <content-prompt-or-file> [path-to-output-html]
                 Example: node index.js design-create "./output/design_tokens.json" "Create a brief update about Biktarvy." "./output/premium_email.html"
 
-  run-all   Run the full pipeline (extract tokens first, then generate a new email using them).
-            Usage: node index.js run-all <path-to-html> <content-prompt-or-file> [output-dir]
-            Example: node index.js run-all "./ModCon TRO Emailer.html" "Create a brief update about Trodelvy clinical data." "./output"
+  mjml-create   Generate a responsive email in MJML markup instead of HTML.
+                Usage: node index.js mjml-create <path-to-tokens-json> <content-prompt-or-file> [path-to-output-mjml]
+                Example: node index.js mjml-create "./output/design_tokens.json" "Create a brief update about Biktarvy." "./output/generated_email.mjml"
 
-  help      Show this help information.
+  run-all       Run the full pipeline (extract tokens first, then generate a new email using them).
+                Usage: node index.js run-all <path-to-html> <content-prompt-or-file> [output-dir]
+                Example: node index.js run-all "./ModCon TRO Emailer.html" "Create a brief update about Trodelvy clinical data." "./output"
+
+  run-all-mjml  Run the full MJML pipeline (extract tokens first, then generate a new MJML email).
+                Usage: node index.js run-all-mjml <path-to-html> <content-prompt-or-file> [output-dir]
+                Example: node index.js run-all-mjml "./ModCon TRO Emailer.html" "Create a brief update about Trodelvy clinical data." "./output"
+
+  help          Show this help information.
 `);
 }
 
@@ -87,6 +96,19 @@ async function main() {
         break;
       }
 
+      case 'mjml-create': {
+        if (args.length < 3) {
+          console.error('Error: Missing arguments for mjml-create.');
+          console.error('Usage: node index.js mjml-create <path-to-tokens-json> <content-prompt-or-file> [path-to-output-mjml]');
+          process.exit(1);
+        }
+        const tokensJson = args[1];
+        const content = args[2];
+        const outputMjml = args[3] || './output/generated_email.mjml';
+        await createMjmlEmail(tokensJson, content, outputMjml);
+        break;
+      }
+
       case 'run-all': {
         if (args.length < 3) {
           console.error('Error: Missing arguments for run-all.');
@@ -109,6 +131,31 @@ async function main() {
         console.log('\nPipeline completed successfully!');
         console.log(`Design tokens: ${tokensJsonPath}`);
         console.log(`Generated email: ${outputHtmlPath}`);
+        break;
+      }
+
+      case 'run-all-mjml': {
+        if (args.length < 3) {
+          console.error('Error: Missing arguments for run-all-mjml.');
+          console.error('Usage: node index.js run-all-mjml <path-to-html> <content-prompt-or-file> [output-dir]');
+          process.exit(1);
+        }
+        const sampleHtmlPath = args[1];
+        const contentPromptOrFile = args[2];
+        const outputDir = args[3] || './output';
+
+        const tokensJsonPath = path.join(outputDir, 'design_tokens.json');
+        const outputMjmlPath = path.join(outputDir, 'generated_email.mjml');
+
+        console.log('=== STEP 1: EXTRACTING DESIGN TOKENS ===');
+        await extractTokens(sampleHtmlPath, tokensJsonPath);
+
+        console.log('\n=== STEP 2: GENERATING MJML EMAIL FROM TOKENS ===');
+        await createMjmlEmail(tokensJsonPath, contentPromptOrFile, outputMjmlPath);
+
+        console.log('\nPipeline completed successfully!');
+        console.log(`Design tokens: ${tokensJsonPath}`);
+        console.log(`Generated MJML email: ${outputMjmlPath}`);
         break;
       }
 
