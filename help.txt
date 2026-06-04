@@ -1,2 +1,3 @@
 node index.js run-all "ProjectID_00618.html" "Create a clinical trial update email for Biktarvy based on the template layout." "./output"
 node index.js design-create "./output/design_tokens.json" "Create a clinical trial update email for Biktarvy. Headline: Biktarvy clinical trial data reinforces durable efficacy. Paragraph copy: In clinical studies of virologically suppressed adults switching to Biktarvy, 99% of patients maintained viral suppression through 3 years of follow-up. CTA Button: 'Explore Clinical Details'. Section highlight: 0 cases of treatment-emergent resistance observed." "./output/premium_email.html"
+node index.js run-all-mjml "ProjectID_00618.html" "Create a clinical trial update email for Biktarvy based on the template layout." "./output"
