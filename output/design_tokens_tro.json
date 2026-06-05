@@ -1,0 +1,335 @@
+{
+  "brandName": "TRODELVY (Gilead Oncology)",
+  "colors": {
+    "primaryColor": "#003593",
+    "secondaryColor": "#01714f",
+    "accentColor": "#35b376",
+    "backgroundColor": "#ffffff",
+    "containerBgColor": "#ffffff",
+    "textColor": "#000000",
+    "lightBgColor": "#e9e9e9"
+  },
+  "preheader": {
+    "text": "This is a promotional email from Gilead Sciences intended for healthcare professionals in the UK only. Prescribing information and adverse events reporting is available at the end of this email.",
+    "backgroundColor": "#e9e9e9",
+    "textColor": "#50504f",
+    "fontSize": "10px",
+    "lineHeight": "13px",
+    "padding": "10px 25px 0px 25px"
+  },
+  "typography": {
+    "fontFamily": "Arial, sans-serif",
+    "baseFontSize": "13px",
+    "baseLineHeight": "15px",
+    "header1": {
+      "fontSize": "18px",
+      "lineHeight": "25px",
+      "color": "#003594",
+      "fontWeight": "700"
+    },
+    "header2": {
+      "fontSize": "13px",
+      "lineHeight": "18px",
+      "color": "#01714f",
+      "fontWeight": "700"
+    },
+    "header3": {
+      "fontSize": "13px",
+      "lineHeight": "19px",
+      "color": "#004092",
+      "fontWeight": "700"
+    }
+  },
+  "layout": {
+    "maxContainerWidth": "600px",
+    "sectionPaddingDesktop": "20px 0",
+    "sectionPaddingMobile": "15px 0"
+  },
+  "components": {
+    "headerBanner": {
+      "hasBanner": true,
+      "backgroundImageUrlPattern": null,
+      "padding": "0px",
+      "height": null,
+      "titleColor": null,
+      "titleSize": null
+    },
+    "calloutBox": {
+      "backgroundColor": "#dddced",
+      "borderRadius": "0px",
+      "borderColor": null,
+      "borderWidth": null,
+      "padding": "10px 25px",
+      "textColor": "#004092"
+    },
+    "button": {
+      "backgroundColor": "#003593",
+      "textColor": "#ffffff",
+      "borderRadius": "0px",
+      "padding": "14px 23px",
+      "fontSize": "12px",
+      "fontWeight": "700",
+      "alignment": "center"
+    },
+    "bulletList": {
+      "bulletCharacter": "•",
+      "bulletColor": "#000000",
+      "fontSize": "13px",
+      "lineHeight": "15px",
+      "indentation": "5% / 95% column split with left padding 20px on bullet"
+    },
+    "divider": {
+      "color": "#000000",
+      "thickness": "1.5px",
+      "margin": "0px"
+    },
+    "footer": {
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff",
+      "fontSize": "11px",
+      "lineHeight": "15px",
+      "padding": "20px 0",
+      "alignment": "center"
+    }
+  },
+  "assets": [
+    {
+      "id": "hero_banner",
+      "url": "https://d21sis9b3eupbe.cloudfront.net/c3d0f84627777124ebdda7bb6e44310b4521fa25/fe5345b166c4_7df34e85b7bc_15885_uki_tro_vae_up_ie_trodelvyvae_dec2025.jpg",
+      "width": "600",
+      "alt": null,
+      "purpose": "Top hero promotional image for TRODELVY"
+    },
+    {
+      "id": "treatment_journey_graphic",
+      "url": "https://dgg99061ord78.cloudfront.net/components/03419e83-47f9-4908-a099-eb82bac53120/8689578c-0144-4b77-a00a-567e4a4f0fe6/929976_1_0.jpg",
+      "width": "600",
+      "alt": null,
+      "purpose": "Inline graphic illustrating treatment lines / outcomes"
+    },
+    {
+      "id": "header_logo",
+      "url": "https://d21sis9b3eupbe.cloudfront.net/c3d0f84627777124ebdda7bb6e44310b4521fa25/09885c2bd175_gilead_logo.png",
+      "width": "263",
+      "alt": null,
+      "purpose": "Gilead logo in body above grey band"
+    },
+    {
+      "id": "footer_logo",
+      "url": "https://d21sis9b3eupbe.cloudfront.net/c3d0f84627777124ebdda7bb6e44310b4521fa25/1e91e9a47af5_footer_gilead_logo.png",
+      "width": "120",
+      "alt": null,
+      "purpose": "Gilead logo in black footer"
+    }
+  ],
+  "structure": [
+    {
+      "sectionId": "preheader_notice",
+      "componentType": "preheader",
+      "backgroundColor": "#e9e9e9",
+      "padding": "10px 0 10px 0",
+      "associatedAssetId": null,
+      "contentSummary": "Top grey bar with promotional notice for UK HCPs and reference to prescribing information and adverse event reporting."
+    },
+    {
+      "sectionId": "hero_image",
+      "componentType": "image_block",
+      "backgroundColor": "#ffffff",
+      "padding": "0px 0 0px 0",
+      "associatedAssetId": "hero_banner",
+      "contentSummary": "Full-width TRODELVY promotional hero image."
+    },
+    {
+      "sectionId": "intro_greeting",
+      "componentType": "text_block",
+      "backgroundColor": "#ffffff",
+      "padding": "20px 20px 10px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Greeting to HCP and introduction about TRODELVY use in mTNBC as early as 2L."
+    },
+    {
+      "sectionId": "headline_indication",
+      "componentType": "text_block",
+      "backgroundColor": "#ffffff",
+      "padding": "10px 20px 0px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Blue H1-style headline stating Trodelvy is indicated for use as early as 2L in mTNBC."
+    },
+    {
+      "sectionId": "subheader_need",
+      "componentType": "text_block",
+      "backgroundColor": "#ffffff",
+      "padding": "10px 20px 10px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Green bold subheader about mTNBC patients needing effective treatment options early."
+    },
+    {
+      "sectionId": "treatment_journey_image",
+      "componentType": "image_block",
+      "backgroundColor": "#ffffff",
+      "padding": "0px 0 0px 0",
+      "associatedAssetId": "treatment_journey_graphic",
+      "contentSummary": "Full-width graphic showing treatment lines / survival outcomes."
+    },
+    {
+      "sectionId": "callout_real_world_outcomes",
+      "componentType": "callout_box",
+      "backgroundColor": "#ffffff",
+      "padding": "10px 20px 10px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Purple/indigo shaded box with centered bold text about 72% of patients not surviving or having no evidence of treatment after 2 lines."
+    },
+    {
+      "sectionId": "green_banner_question",
+      "componentType": "callout_box",
+      "backgroundColor": "#ffffff",
+      "padding": "20px 20px 0px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Green full-width banner asking when TRODELVY could be offered to patients."
+    },
+    {
+      "sectionId": "indication_intro",
+      "componentType": "text_block",
+      "backgroundColor": "#ffffff",
+      "padding": "10px 20px 5px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Intro sentence describing indication after two or more prior lines of systemic therapies."
+    },
+    {
+      "sectionId": "bullet_criteria_1",
+      "componentType": "bullet_list",
+      "backgroundColor": "#ffffff",
+      "padding": "10px 20px 2px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Bullet: Regardless of time on previous systemic therapy or time since last use."
+    },
+    {
+      "sectionId": "bullet_criteria_2",
+      "componentType": "bullet_list",
+      "backgroundColor": "#ffffff",
+      "padding": "10px 20px 2px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Bullet: Includes systemic treatment given for breast cancer prior to TNBC diagnosis."
+    },
+    {
+      "sectionId": "bullet_criteria_3",
+      "componentType": "bullet_list",
+      "backgroundColor": "#ffffff",
+      "padding": "10px 20px 2px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Bullet: In patients with no or asymptomatic/inactive brain metastases."
+    },
+    {
+      "sectionId": "smpc_reminder",
+      "componentType": "text_block",
+      "backgroundColor": "#ffffff",
+      "padding": "10px 20px 0px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Text reminding to consult TRODELVY SmPC with hyperlink."
+    },
+    {
+      "sectionId": "primary_cta",
+      "componentType": "cta_button",
+      "backgroundColor": "#ffffff",
+      "padding": "20px 0 20px 0",
+      "associatedAssetId": null,
+      "contentSummary": "Centered blue CTA button linking to updated GileadPro website for more information about TRODELVY."
+    },
+    {
+      "sectionId": "summary_closure",
+      "componentType": "text_block",
+      "backgroundColor": "#ffffff",
+      "padding": "20px 20px 10px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Paragraph summarizing how TRODELVY can support eligible mTNBC patients."
+    },
+    {
+      "sectionId": "signature_block",
+      "componentType": "text_block",
+      "backgroundColor": "#ffffff",
+      "padding": "5px 20px 20px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Closing with 'Kind regards' and 'Gilead Oncology Team'."
+    },
+    {
+      "sectionId": "body_logo_row",
+      "componentType": "image_block",
+      "backgroundColor": "#ffffff",
+      "padding": "0px 0 10px 0",
+      "associatedAssetId": "header_logo",
+      "contentSummary": "Left-aligned Gilead logo above grey reference band."
+    },
+    {
+      "sectionId": "footnotes_band",
+      "componentType": "text_block",
+      "backgroundColor": "#50504f",
+      "padding": "10px 20px 0px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "White text footnotes explaining real-world data details."
+    },
+    {
+      "sectionId": "abbreviations_band",
+      "componentType": "text_block",
+      "backgroundColor": "#50504f",
+      "padding": "0px 20px 0px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "White text abbreviations list (2L, mTNBC, 1L, 3L)."
+    },
+    {
+      "sectionId": "references_band",
+      "componentType": "text_block",
+      "backgroundColor": "#50504f",
+      "padding": "0px 20px 5px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "White text references list for data cited."
+    },
+    {
+      "sectionId": "prescribing_info_header",
+      "componentType": "text_block",
+      "backgroundColor": "#ffffff",
+      "padding": "20px 20px 10px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Bold line linking to full prescribing information for Trodelvy in the UK."
+    },
+    {
+      "sectionId": "prescribing_info_indication_1",
+      "componentType": "text_block",
+      "backgroundColor": "#ffffff",
+      "padding": "0px 20px 10px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Paragraph describing TRODELVY indication for mTNBC."
+    },
+    {
+      "sectionId": "prescribing_info_indication_2",
+      "componentType": "text_block",
+      "backgroundColor": "#ffffff",
+      "padding": "0px 20px 10px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Paragraph describing TRODELVY indication for HR-positive, HER2-negative breast cancer."
+    },
+    {
+      "sectionId": "ae_reporting_box",
+      "componentType": "callout_box",
+      "backgroundColor": "#ffffff",
+      "padding": "5px 15px 20px 15px",
+      "associatedAssetId": null,
+      "contentSummary": "Bordered box with bold heading 'Adverse events should be reported.' and detailed UK reporting instructions."
+    },
+    {
+      "sectionId": "footer_main",
+      "componentType": "footer",
+      "backgroundColor": "#000000",
+      "padding": "20px 25px 10px 25px",
+      "associatedAssetId": "footer_logo",
+      "contentSummary": "Black footer with Gilead logo, address, privacy statement, preference centre, unsubscribe links, and code/date."
+    },
+    {
+      "sectionId": "footer_legal",
+      "componentType": "footer",
+      "backgroundColor": "#50504f",
+      "padding": "10px 20px 10px 20px",
+      "associatedAssetId": null,
+      "contentSummary": "Grey band with trademark and copyright legal text."
+    }
+  ]
+}

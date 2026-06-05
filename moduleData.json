@@ -1,0 +1,110 @@
+[
+  {
+    "moduleId": "9f0844a8-09cc-4552-bdd2-87a2f81de18e",
+    "moduleName": "Module13",
+    "productName": "Biktarvy",
+    "countryName": "Spain",
+    "claims": [
+      {
+        "claimName": "CL-005527",
+        "matchText": "Aproximadamente el 60% de los pacientes no son completamente adherentes al TAR",
+        "mustUse": true,
+        "abbreviation": "TAR: tratamiento antirretroviral.",
+        "references": [
+          {
+            "id": "c303266b-38e8-43a0-9d71-561981a9fa26",
+            "documentUrl": "https://sb-gilead-poc-global-promomats.veevavault.com/ui/#doc_info/8753/1/0",
+            "documentName": "McComsey G.A, et al. Real-World Adherence to Antiretroviral Therapy Among HIV-1 Patients Across the United States. Adv Ther. 2021 Sep;38(9):4961-4974. doi: 10.1007/s12325-021-01883-8."
+          }
+        ],
+        "relatedClaims": []
+      },
+      {
+        "claimName": "CL-005528",
+        "matchText": "La adherencia subóptima se asocia con resistencia emergente al tratamiento",
+        "mustUse": true,
+        "references": [
+          {
+            "id": "b9dd7759-15b9-4733-ade3-d02278d33029",
+            "documentUrl": "https://sb-gilead-poc-global-promomats.veevavault.com/ui/#doc_info/8754/1/0",
+            "documentName": "Carr A, et al. HIV drug resistance in the era of contemporary antiretroviral therapy: A clinical perspective. Antivir Ther. 2023 Oct;28(5):1-15. doi: 10.1177/13596535231201162."
+          }
+        ],
+        "relatedClaims": []
+      },
+      {
+        "claimName": "CL-005529",
+        "matchText": "La adherencia subóptima se asocia con una no supresión virológica (OR: 2,24; IC 95%: 1,66–3,02)",
+        "mustUse": true,
+        "abbreviation": "IC: intervalo de confianza; OR: odds ratio; VIH: virus de inmunodeficiencia humana.",
+        "footnotes": "La adherencia subóptima se definió como un informe de ≥1 razón por la que faltó al tratamiento antirretroviral ≥5 veces en el último mes.\nDatos de encuestas de adultos VIH+ confirmados en tratamiento antirretroviral en 25 países durante 2019 (EE. UU. [n = 400], Sudáfrica [n = 179], Rusia [n = 150], Reino Unido [n = 123], Australia [n = 120], Canadá [n = 120], Francia [n = 120], Alemania [n = 120], Italia [n = 120], España [n = 120], Japón [n = 75], México [n = 63], Portugal [n = 60], Brasil [n=58], Suiza [n=55], Taiwán [n=55], Países Bajos [n=51], Argentina [n=50], Austria [n=50], Bélgica [n=50], Chile [n=50], China [n=50], Irlanda [n=50], Polonia [n=50] y Corea del Sur [n=50]); La no supresión virológica fue autoinformada.",
+        "references": [
+          {
+            "id": "5368da1d-1ff4-4a74-9344-2eb8b12caefb",
+            "documentUrl": "https://sb-gilead-poc-global-promomats.veevavault.com/ui/#doc_info/8854/1/0",
+            "documentName": "de Los Rios P, et al. Prevalence, determinants, and impact of suboptimal adherence to HIV medication in 25 countries. Prev Med. 2020 Oct;139:106182. doi: 10.1016/j.ypmed.2020.106182."
+          }
+        ],
+        "relatedClaims": []
+      },
+      {
+        "claimName": "CL-005530",
+        "matchText": "Biktarvy es el único regimen basado en INI con 0 resistencias en todos sus ensayos clínicos, tanto en población naïve como pretratada",
+        "mustUse": false,
+        "abbreviation": "INI: inhibidor de integrasa.",
+        "footnotes": "Revisión sistemática donde se describen las mutaciones de resistencia y fracasos virológicos observados con los últimos INI aprobados: dolutegravir, bictegravir y cabotegravir. La revisión sistemática se llevó a cabo siguiendo los estándares habituales y, adicionalmente, se aplicaron las directrices de PRISMA.",
+        "references": [
+          {
+            "id": "d65a5b1d-70f1-4979-ba2c-199f30a506f7",
+            "documentUrl": "https://sb-gilead-poc-global-promomats.veevavault.com/ui/#doc_info/8860/1/0",
+            "documentName": "Blanco JL, et al. HIV-1 resistance and virological failure to treatment with the integrase inhibitors bictegravir, cabotegravir and dolutegravir: a systematic literature review. AIDS reviews. 2024."
+          }
+        ],
+        "relatedClaims": []
+      },
+      {
+        "claimName": "CL-005531",
+        "matchText": "Mutaciones de resistencia asociadas con el tratamiento. Pacientes con TAR previo",
+        "mustUse": false,
+        "abbreviation": "TAR: tratamiento antirretroviral.",
+        "references": [
+          {
+            "id": "5943b48e-61fe-46a0-8bcb-415cf467d25b",
+            "documentUrl": "https://sb-gilead-poc-global-promomats.veevavault.com/ui/#doc_info/8860/1/0",
+            "documentName": "Blanco JL, et al. HIV-1 resistance and virological failure to treatment with the integrase inhibitors bictegravir, cabotegravir and dolutegravir: a systematic literature review. AIDS reviews. 2024."
+          }
+        ],
+        "relatedClaims": []
+      }
+    ],
+    "reusableTexts": [
+      {
+        "matchText": "Solicita aquí el acceso completo al contenido, materiales y recursos proporcionados por el equipo de información médica",
+        "mustUse": true
+      }
+    ],
+    "components": [
+      {
+        "componentUrl": "https://d1t0wo1ho6nrgc.cloudfront.net/components/6b90ff66-f712-423b-a2d8-932e291ed3f8/7ccda75e-98cb-4866-aa9b-f58a0ce535e2/8884_1_0.png",
+        "classification": "Illustration",
+        "title": "Advertencia de Riesgo: Símbolo de Precaución ante Situaciones Peligrosas",
+        "relatedClaims": [],
+        "relatedReusableTexts": []
+      },
+      {
+        "componentUrl": "https://d1t0wo1ho6nrgc.cloudfront.net/components/e3fa38de-9e99-4119-893d-20fe25a1ced6/c990fbdf-7694-4a74-9fcc-7ef194d65723/8886_1_0.png",
+        "classification": "Data Chart",
+        "title": "Mutaciones de resistencia asociados con el tratamiento. Pacientes con TAR previo",
+        "relatedClaims": [],
+        "relatedReusableTexts": []
+      },
+      {
+        "componentUrl": "https://d1t0wo1ho6nrgc.cloudfront.net/components/6b90ff66-f712-423b-a2d8-932e291ed3f8/0c1fcd18-f2c3-45ac-942a-0322f67ce686/8885_1_0.png",
+        "classification": "Illustration",
+        "title": "Representación Gráfica del Virus: Indicador de Amenaza Biológica o Infección",
+        "relatedClaims": [],
+        "relatedReusableTexts": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,252 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Arial, sans-serif" />
+      <mj-section padding="20px 0" />
+      <mj-text font-family="Arial, sans-serif" font-size="12px" line-height="15px" color="#000000" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body width="600px" background-color="#ffffff">
+    <!-- Hero Banner -->
+    <mj-section background-color="#ffffff" padding="20px 0 20px 0">
+      <mj-column>
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/bg-1760607403292-1770358489191-1770366913367-1776398001082-1776501869027.png" width="600px" padding="0px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Greeting -->
+    <mj-section background-color="#ffffff" padding="20px 0">
+      <mj-column>
+        <mj-text font-size="12px" line-height="15px" color="#000000" font-weight="400" font-family="Arial, sans-serif">
+          Estimado Dr./Dra. {{accLname}},
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Intro present/future (use Claim 1 as main headline) -->
+    <mj-section background-color="#ffffff" padding="0px 0">
+      <mj-column>
+        <mj-text font-size="23px" line-height="23px" color="#000000" font-weight="400" font-family="Arial, sans-serif">
+          Aproximadamente el 60% de los pacientes no son completamente adherentes al TAR<sup>1</sup>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Intro patient question (use Claim 2 as first subheadline) -->
+    <mj-section background-color="#ffffff" padding="0px 0">
+      <mj-column>
+        <mj-text font-size="14px" line-height="17px" color="#CF0A2C" font-weight="700" font-family="Arial, sans-serif">
+          La adherencia subóptima se asocia con resistencia emergente al tratamiento<sup>2</sup>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Callout box (Claim 3) -->
+    <mj-section background-color="#CF0A2C" padding="5px 25px">
+      <mj-column>
+        <mj-text align="center" font-size="13px" line-height="15px" color="#edebe3" font-weight="400" font-family="Arial, sans-serif">
+          La adherencia subóptima se asocia con una no supresión virológica (OR: 2,24; IC 95%: 1,66–3,02)<sup>*,3</sup>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Claim adherence uncertainty (Claim 4) -->
+    <mj-section background-color="#ffffff" padding="0px 0">
+      <mj-column>
+        <mj-text font-size="14px" line-height="17px" color="#CF0A2C" font-weight="700" font-family="Arial, sans-serif">
+          Biktarvy es el único regimen basado en INI con 0 resistencias en todos sus ensayos clínicos, tanto en población naïve como pretratada<sup>†,4</sup>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Claim long term success (Claim 5) -->
+    <mj-section background-color="#ffffff" padding="0px 0">
+      <mj-column>
+        <mj-text font-size="13px" line-height="15px" color="#000000" font-weight="400" font-family="Arial, sans-serif">
+          Mutaciones de resistencia asociadas con el tratamiento. Pacientes con TAR previo<sup>4</sup>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Subheader low adherence -->
+    <mj-section background-color="#ffffff" padding="0px 0">
+      <mj-column>
+        <mj-text font-size="14px" line-height="17px" color="#CF0A2C" font-weight="700" font-family="Arial, sans-serif">
+          Supresión virológica en participantes con baja adherencia
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Image low adherence chart -->
+    <mj-section background-color="#ffffff" padding="0px 0">
+      <mj-column>
+        <mj-image src="https://d1t0wo1ho6nrgc.cloudfront.net/components/e3fa38de-9e99-4119-893d-20fe25a1ced6/c990fbdf-7694-4a74-9fcc-7ef194d65723/8886_1_0.png" width="550px" padding="0px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Claim rapid start summary (use reusable text as medical info / access block) -->
+    <mj-section background-color="#ffffff" padding="0px 0">
+      <mj-column>
+        <mj-text align="center" font-size="14px" line-height="17px" color="#CF0A2C" font-weight="700" font-family="Arial, sans-serif">
+          Solicita aquí el acceso completo al contenido, materiales y recursos proporcionados por el equipo de información médica
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Claim rapid start discontinuations -->
+    <mj-section background-color="#ffffff" padding="0px 0">
+      <mj-column>
+        <mj-text font-size="13px" line-height="15px" color="#000000" font-weight="400" font-family="Arial, sans-serif">
+          BIKTARVY ofrece un perfil de eficacia y seguridad que respalda su uso en pacientes con posibles problemas de adherencia a largo plazo.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Subheader rapid start suppression -->
+    <mj-section background-color="#ffffff" padding="0px 0">
+      <mj-column>
+        <mj-text font-size="14px" line-height="17px" color="#CF0A2C" font-weight="700" font-family="Arial, sans-serif">
+          PVIH que alcanzan la supresión virológica con BIKTARVY en el seguimiento
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Image rapid start chart (skip because URL is null) -->
+
+    <!-- Two-column illustration: Caution symbol -->
+    <mj-section background-color="#ffffff" padding="10px 0">
+      <mj-column width="80%">
+        <mj-text font-size="12px" line-height="15px" color="#000000" font-weight="400" font-family="Arial, sans-serif">
+          Advertencia de Riesgo: Símbolo de Precaución ante Situaciones Peligrosas
+        </mj-text>
+      </mj-column>
+      <mj-column width="20%">
+        <mj-image src="https://d1t0wo1ho6nrgc.cloudfront.net/components/6b90ff66-f712-423b-a2d8-932e291ed3f8/7ccda75e-98cb-4866-aa9b-f58a0ce535e2/8884_1_0.png" width="149px" padding="0px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Two-column illustration: Virus icon -->
+    <mj-section background-color="#ffffff" padding="10px 0">
+      <mj-column width="80%">
+        <mj-text font-size="12px" line-height="15px" color="#000000" font-weight="400" font-family="Arial, sans-serif">
+          Representación Gráfica del Virus: Indicador de Amenaza Biológica o Infección
+        </mj-text>
+      </mj-column>
+      <mj-column width="20%">
+        <mj-image src="https://d1t0wo1ho6nrgc.cloudfront.net/components/6b90ff66-f712-423b-a2d8-932e291ed3f8/0c1fcd18-f2c3-45ac-942a-0322f67ce686/8885_1_0.png" width="149px" padding="0px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Primary CTA -->
+    <mj-section background-color="#ffffff" padding="20px 0">
+      <mj-column>
+        <mj-button background-color="#CF0A2C" color="#ffffff" font-size="13px" font-weight="400" font-family="Arial, sans-serif" border-radius="3px" padding="10px 25px" align="center" href="https://www.gilead.com">
+          Learn More
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Divider red top -->
+    <mj-section background-color="#ffffff" padding="0px 0">
+      <mj-column>
+        <mj-divider border-color="#cf0a2b" border-width="2px" padding="0px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer logos desktop (single row with logo and download icon) -->
+    <mj-section background-color="#ffffff" padding="20px 0 5px 0">
+      <mj-column width="50%">
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/70af4d47b795_78e7639f6139_ae1ab5ee8b53_biktarvy_logo.png" width="149px" padding="0px" />
+      </mj-column>
+      <mj-column width="50%">
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/84c8e4925344_d4e7c662e705_028ad8eed8a2_050793a13eec_download.png" width="149px" padding="0px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer logos mobile (stacked for mobile; same images, larger width) -->
+    <mj-section background-color="#ffffff" padding="20px 0 5px 0">
+      <mj-column>
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/70af4d47b795_78e7639f6139_ae1ab5ee8b53_biktarvy_logo.png" width="250px" padding="0px" />
+      </mj-column>
+      <mj-column>
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/84c8e4925344_d4e7c662e705_028ad8eed8a2_050793a13eec_download.png" width="250px" padding="0px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- GileadPro banner -->
+    <mj-section background-color="#ffffff" padding="10px 0 10px 0">
+      <mj-column>
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/1bc1b12caa4f_19df42e3c070_89b901d5e902_gilead_pro.png" width="550px" padding="0px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Footnote forgiveness (from processed footnotes) -->
+    <mj-section background-color="#ffffff" padding="5px 0">
+      <mj-column>
+        <mj-text font-size="10px" line-height="15px" color="#707070" font-weight="400" font-family="Arial, sans-serif">
+          <sup>*</sup>La adherencia subóptima se definió como un informe de ≥1 razón por la que faltó al tratamiento antirretroviral ≥5 veces en el último mes.
+          Datos de encuestas de adultos VIH+ confirmados en tratamiento antirretroviral en 25 países durante 2019 (EE. UU. [n = 400], Sudáfrica [n = 179], Rusia [n = 150], Reino Unido [n = 123], Australia [n = 120], Canadá [n = 120], Francia [n = 120], Alemania [n = 120], Italia [n = 120], España [n = 120], Japón [n = 75], México [n = 63], Portugal [n = 60], Brasil [n=58], Suiza [n=55], Taiwán [n=55], Países Bajos [n=51], Argentina [n=50], Austria [n=50], Bélgica [n=50], Chile [n=50], China [n=50], Irlanda [n=50], Polonia [n=50] y Corea del Sur [n=50]); La no supresión virológica fue autoinformada.; <sup>†</sup>Revisión sistemática donde se describen las mutaciones de resistencia y fracasos virológicos observados con los últimos INI aprobados: dolutegravir, bictegravir y cabotegravir. La revisión sistemática se llevó a cabo siguiendo los estándares habituales y, adicionalmente, se aplicaron las directrices de PRISMA.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footnote abbreviations -->
+    <mj-section background-color="#ffffff" padding="5px 0">
+      <mj-column>
+        <mj-text font-size="10px" line-height="15px" color="#707070" font-weight="400" font-family="Arial, sans-serif">
+          <b>IC</b>: intervalo de confianza; <b>INI</b>: inhibidor de integrasa; <b>OR</b>: odds ratio; <b>TAR</b>: tratamiento antirretroviral; <b>VIH</b>: virus de inmunodeficiencia humana
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footnote bibliography -->
+    <mj-section background-color="#ffffff" padding="5px 0">
+      <mj-column>
+        <mj-text font-size="10px" line-height="15px" color="#707070" font-weight="400" font-family="Arial, sans-serif">
+          <b>BIBLIOGRAFÍA:</b> 1. McComsey G.A, et al. Real-World Adherence to Antiretroviral Therapy Among HIV-1 Patients Across the United States. Adv Ther. 2021 Sep;38(9):4961-4974. doi: 10.1007/s12325-021-01883-8.; 2. Carr A, et al. HIV drug resistance in the era of contemporary antiretroviral therapy: A clinical perspective. Antivir Ther. 2023 Oct;28(5):1-15. doi: 10.1177/13596535231201162.; 3. de Los Rios P, et al. Prevalence, determinants, and impact of suboptimal adherence to HIV medication in 25 countries. Prev Med. 2020 Oct;139:106182. doi: 10.1016/j.ypmed.2020.106182.; 4. Blanco JL, et al. HIV-1 resistance and virological failure to treatment with the integrase inhibitors bictegravir, cabotegravir and dolutegravir: a systematic literature review. AIDS reviews. 2024.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Gilead logo section -->
+    <mj-section background-color="#ffffff" padding="10px 0 10px 0">
+      <mj-column>
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/34f28675a572_588f5d96092d_858ffba93ad3_gilead_logo.png" width="120px" padding="0px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Regulatory block grey -->
+    <mj-section background-color="#e4e4e4" padding="15px 25px 5px 25px">
+      <mj-column>
+        <mj-text font-size="10px" line-height="15px" color="#000000" font-weight="400" font-family="Arial, sans-serif">
+          Para consultar la ficha técnica completa de BIKTARVY, por favor acceda a la versión actualizada de la Ficha Técnica autorizada por la AEMPS.
+          Código material: ES-BVY-XXXX. Para cualquier consulta adicional, contacte con el Servicio de Información Médica de Gilead.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Pharmacovigilance QR -->
+    <mj-section background-color="#e4e4e4" padding="10px 0 5px 0">
+      <mj-column width="20%">
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/c89966fe2a64_0c1df1766ca1_af0b5d88ea22_barcode.gif" width="59px" padding="0px 0px 0px 25px" />
+      </mj-column>
+      <mj-column width="80%">
+        <mj-text font-size="10px" line-height="15px" color="#000000" font-weight="400" font-family="Arial, sans-serif">
+          Para notificar sospechas de reacciones adversas, póngase en contacto con el Sistema Español de Farmacovigilancia de Medicamentos de Uso Humano (SEFV-H) o con Gilead Sciences a través de los canales habilitados.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Legal disclaimer block -->
+    <mj-section background-color="#edebe3" padding="0px 0 0px 0">
+      <mj-column>
+        <mj-text font-size="10px" line-height="15px" color="#000000" font-weight="400" font-family="Arial, sans-serif">
+          Este mensaje va dirigido exclusivamente a profesionales sanitarios facultados para prescribir o dispensar medicamentos en España. Si ha recibido este correo por error, le rogamos lo elimine. 
+          Puede ejercer sus derechos de acceso, rectificación, supresión, limitación del tratamiento y oposición, así como revocar su consentimiento, a través de los canales indicados por Gilead Sciences. 
+          Si no desea seguir recibiendo comunicaciones, puede darse de baja mediante el enlace de cancelación de suscripción o dirigiéndose a Gilead conforme a la normativa de protección de datos aplicable (AEPD).
+        </mj-text>
+        <mj-divider border-color="#cf0a2b" border-width="2px" padding="0px" />
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

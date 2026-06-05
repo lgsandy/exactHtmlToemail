@@ -2,6 +2,7 @@ import { extractTokens } from './extract.js';
 import { createEmail } from './create.js';
 import { createEmail as createDesignEmail } from './design-create.js';
 import { createEmail as createMjmlEmail } from './mjml-create.js';
+import { createEmailFromData } from './actual_data_create_mjml.js';
 import path from 'path';
 import fs from 'fs';
 
@@ -28,6 +29,10 @@ Commands:
   mjml-create   Generate a responsive email in MJML markup instead of HTML.
                 Usage: node index.js mjml-create <path-to-tokens-json> <content-prompt-or-file> [path-to-output-mjml]
                 Example: node index.js mjml-create "./output/design_tokens.json" "Create a brief update about Biktarvy." "./output/generated_email.mjml"
+
+  actual-mjml   Generate a responsive email in MJML using structured moduleData JSON dynamic content.
+                Usage: node index.js actual-mjml <path-to-tokens-json> <path-to-module-data-json> [path-to-output-mjml]
+                Example: node index.js actual-mjml "./output/design_tokens.json" "moduleData.json" "./output/generated_email.mjml"
 
   run-all       Run the full pipeline (extract tokens first, then generate a new email using them).
                 Usage: node index.js run-all <path-to-html> <content-prompt-or-file> [output-dir]
@@ -106,6 +111,19 @@ async function main() {
         const content = args[2];
         const outputMjml = args[3] || './output/generated_email.mjml';
         await createMjmlEmail(tokensJson, content, outputMjml);
+        break;
+      }
+
+      case 'actual-mjml': {
+        if (args.length < 3) {
+          console.error('Error: Missing arguments for actual-mjml.');
+          console.error('Usage: node index.js actual-mjml <path-to-tokens-json> <path-to-module-data-json> [path-to-output-mjml]');
+          process.exit(1);
+        }
+        const tokensJson = args[1];
+        const moduleDataJson = args[2];
+        const outputMjml = args[3] || './output/generated_email.mjml';
+        await createEmailFromData(tokensJson, moduleDataJson, outputMjml);
         break;
       }
 
