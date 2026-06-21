@@ -3,209 +3,225 @@
     <mj-attributes>
       <mj-all font-family="Arial, sans-serif" />
       <mj-text font-family="Arial, sans-serif" font-size="13px" line-height="15px" color="#000000" />
-      <mj-section padding="20px 0" />
+      <mj-button font-family="Arial, sans-serif" font-size="13px" line-height="15px" />
     </mj-attributes>
   </mj-head>
   <mj-body width="600px" background-color="#ffffff">
     <!-- Hero Banner -->
-    <mj-section background-color="#ffffff" padding="20px 0 20px 0">
+    <mj-section padding="20px 0" background-color="#ffffff">
       <mj-column>
         <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/bg-1760607403292-1770358489191-1770366913367-1776398001082-1776501869027.png" width="600px" padding="0px" />
       </mj-column>
     </mj-section>
 
     <!-- Greeting -->
-    <mj-section background-color="#ffffff" padding="20px 0">
+    <mj-section background-color="#ffffff" padding="10px 0">
       <mj-column>
-        <mj-text font-size="13px" line-height="15px" color="#000000" font-weight="normal" font-family="Arial, sans-serif">
+        <mj-text font-size="13px" line-height="15px" color="#000000" font-weight="normal" font-family="Arial, sans-serif" padding="10px 25px">
           Estimado Dr./Dra. {{accLname}},
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Claim 1 as main headline -->
-    <mj-section background-color="#ffffff" padding="5px 25px 20px 25px">
+    <!-- Claim 1 mapped to main headline slot -->
+    <mj-section background-color="#ffffff" padding="5px 0 20px 0">
       <mj-column>
-        <mj-text align="center" font-size="23px" line-height="23px" color="#000000" font-weight="normal" font-family="Arial, sans-serif">
+        <mj-text align="center" font-size="23px" line-height="1" color="#000000" font-weight="normal" font-family="Arial, sans-serif" padding="5px 25px 20px 25px">
           Aproximadamente el 60% de los pacientes no son completamente adherentes al TAR<sup>1</sup>
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Intro HIVTSQ (use Claim 2 as subheadline-style intro) -->
-    <mj-section background-color="#ffffff" padding="5px 25px">
+    <!-- Claim 2 mapped to first subheadline slot -->
+    <mj-section background-color="#ffffff" padding="5px 0">
       <mj-column>
-        <mj-text font-size="14px" line-height="17px" color="#CF0A2C" font-weight="700" font-family="Arial, sans-serif">
+        <mj-text font-size="14px" line-height="17px" color="#CF0A2C" font-weight="700" font-family="Arial, sans-serif" padding="5px 25px">
           La adherencia subóptima se asocia con resistencia emergente al tratamiento<sup>2</sup>
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- HIVTSQ Chart Image -->
-    <mj-section background-color="#ffffff" padding="10px 25px">
+    <!-- Patient satisfaction chart -->
+    <mj-section background-color="#ffffff" padding="10px 0">
       <mj-column>
-        <mj-image src="https://d1t0wo1ho6nrgc.cloudfront.net/components/e3fa38de-9e99-4119-893d-20fe25a1ced6/c990fbdf-7694-4a74-9fcc-7ef194d65723/8886_1_0.png" width="550px" padding="0px" />
+        <mj-image src="https://d1t0wo1ho6nrgc.cloudfront.net/components/e3fa38de-9e99-4119-893d-20fe25a1ced6/c990fbdf-7694-4a74-9fcc-7ef194d65723/8886_1_0.png" width="550px" padding="10px 25px" />
       </mj-column>
     </mj-section>
 
-    <!-- Callout Box (Claim 3) -->
-    <mj-section background-color="#CF0A2C" padding="5px 25px">
-      <mj-column>
-        <mj-text font-size="12px" line-height="15px" color="#edebe3" font-weight="normal" font-family="Arial, sans-serif">
+    <!-- Claim 3 mapped to callout box slot -->
+    <mj-section background-color="#CF0A2C" padding="5px 0">
+      <mj-column padding="5px 25px">
+        <mj-text font-size="14px" line-height="17px" color="#edebe3" font-weight="700" font-family="Arial, sans-serif">
           La adherencia subóptima se asocia con una no supresión virológica (OR: 2,24; IC 95%: 1,66–3,02)<sup>*,3</sup>
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Intro time to switch (Claim 4) -->
-    <mj-section background-color="#ffffff" padding="5px 25px">
+    <!-- Claim 4 mapped to second subheadline slot -->
+    <mj-section background-color="#ffffff" padding="5px 0">
       <mj-column>
-        <mj-text font-size="14px" line-height="17px" color="#CF0A2C" font-weight="700" font-family="Arial, sans-serif">
+        <mj-text font-size="14px" line-height="17px" color="#CF0A2C" font-weight="700" font-family="Arial, sans-serif" padding="5px 25px">
           Biktarvy es el único regimen basado en INI con 0 resistencias en todos sus ensayos clínicos, tanto en población naïve como pretratada<sup>†,4</sup>
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Time to switch image (asset URL is null, so skip section entirely) -->
+    <!-- Time to switch chart skipped (no URL) -->
 
-    <!-- Intro risk of switch (Claim 5) -->
-    <mj-section background-color="#ffffff" padding="5px 25px">
+    <!-- Claim 5 mapped to third subheadline slot -->
+    <mj-section background-color="#ffffff" padding="5px 0">
       <mj-column>
-        <mj-text font-size="14px" line-height="17px" color="#CF0A2C" font-weight="700" font-family="Arial, sans-serif">
+        <mj-text font-size="14px" line-height="17px" color="#CF0A2C" font-weight="700" font-family="Arial, sans-serif" padding="5px 25px">
           Mutaciones de resistencia asociadas con el tratamiento. Pacientes con TAR previo<sup>4</sup>
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Risk of switch image (asset URL is null, so skip section entirely) -->
+    <!-- Risk of switch chart skipped (no URL) -->
 
     <!-- Two-column illustration: Caution symbol -->
-    <mj-section background-color="#ffffff" padding="10px 25px">
+    <mj-section background-color="#ffffff" padding="10px 0">
       <mj-column width="80%">
-        <mj-text font-size="13px" line-height="15px" color="#000000" font-weight="normal" font-family="Arial, sans-serif">
+        <mj-text font-size="13px" line-height="15px" color="#000000" font-weight="normal" font-family="Arial, sans-serif" padding="10px 25px 10px 25px">
           Advertencia de Riesgo: Símbolo de Precaución ante Situaciones Peligrosas
         </mj-text>
       </mj-column>
       <mj-column width="20%">
-        <mj-image src="https://d1t0wo1ho6nrgc.cloudfront.net/components/6b90ff66-f712-423b-a2d8-932e291ed3f8/7ccda75e-98cb-4866-aa9b-f58a0ce535e2/8884_1_0.png" width="149px" padding="0px" />
+        <mj-image src="https://d1t0wo1ho6nrgc.cloudfront.net/components/6b90ff66-f712-423b-a2d8-932e291ed3f8/7ccda75e-98cb-4866-aa9b-f58a0ce535e2/8884_1_0.png" width="149px" padding="10px 25px 10px 0px" />
       </mj-column>
     </mj-section>
 
-    <!-- Two-column illustration: Virus icon -->
-    <mj-section background-color="#ffffff" padding="10px 25px">
+    <!-- Two-column illustration: Virus graphic -->
+    <mj-section background-color="#ffffff" padding="10px 0">
       <mj-column width="80%">
-        <mj-text font-size="13px" line-height="15px" color="#000000" font-weight="normal" font-family="Arial, sans-serif">
+        <mj-text font-size="13px" line-height="15px" color="#000000" font-weight="normal" font-family="Arial, sans-serif" padding="10px 25px 10px 25px">
           Representación Gráfica del Virus: Indicador de Amenaza Biológica o Infección
         </mj-text>
       </mj-column>
       <mj-column width="20%">
-        <mj-image src="https://d1t0wo1ho6nrgc.cloudfront.net/components/6b90ff66-f712-423b-a2d8-932e291ed3f8/0c1fcd18-f2c3-45ac-942a-0322f67ce686/8885_1_0.png" width="149px" padding="0px" />
+        <mj-image src="https://d1t0wo1ho6nrgc.cloudfront.net/components/6b90ff66-f712-423b-a2d8-932e291ed3f8/0c1fcd18-f2c3-45ac-942a-0322f67ce686/8885_1_0.png" width="149px" padding="10px 25px 10px 0px" />
       </mj-column>
     </mj-section>
 
-    <!-- Primary CTA Button -->
-    <mj-section background-color="#ffffff" padding="10px 25px 30px 24px">
+    <!-- CTA Button -->
+    <mj-section background-color="#ffffff" padding="10px 0 30px 0">
       <mj-column>
-        <mj-button background-color="#CF0A2C" color="#ffffff" border-radius="3px" padding="10px 25px" font-size="13px" font-weight="normal" font-family="Arial, sans-serif" align="center" href="#">
-          Solicita aquí el acceso completo al contenido, materiales y recursos proporcionados por el equipo de información médica
+        <mj-button href="https://www.test.com" background-color="#CF0A2C" color="#ffffff" font-size="13px" font-weight="normal" border-radius="3px" align="center" padding="10px 25px">
+          Learn More
         </mj-button>
       </mj-column>
     </mj-section>
 
-    <!-- Divider Top Footer -->
+    <!-- Divider post content -->
     <mj-section background-color="#ffffff" padding="0px">
       <mj-column>
         <mj-divider border-color="#cf0a2b" border-width="2px" padding="0px" />
       </mj-column>
     </mj-section>
 
-    <!-- Footer strip desktop: Biktarvy logo and CTA download graphic side by side -->
-    <mj-section background-color="#ffffff" padding="20px 0 5px 0">
-      <mj-column width="50%">
-        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/70af4d47b795_78e7639f6139_ae1ab5ee8b53_biktarvy_logo.png" width="149px" padding="0px" />
+    <!-- Brand band desktop: logo + download (single 3-column approximation) -->
+    <mj-section background-color="#ffffff" padding="10px 0">
+      <mj-column width="33%">
+        <mj-text font-size="13px" line-height="15px" color="#000000" font-weight="normal" font-family="Arial, sans-serif" padding="10px 25px">
+        </mj-text>
       </mj-column>
-      <mj-column width="50%">
-        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/84c8e4925344_d4e7c662e705_028ad8eed8a2_050793a13eec_download.png" width="149px" padding="0px" />
+      <mj-column width="34%">
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/70af4d47b795_78e7639f6139_ae1ab5ee8b53_biktarvy_logo.png" width="149px" padding="10px 25px" />
+      </mj-column>
+      <mj-column width="33%">
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/84c8e4925344_d4e7c662e705_028ad8eed8a2_050793a13eec_download.png" width="149px" padding="10px 25px" />
       </mj-column>
     </mj-section>
 
-    <!-- Footer strip mobile: stacked logo and CTA (rendered as single column for responsiveness) -->
-    <mj-section background-color="#ffffff" padding="20px 0 5px 0">
+    <!-- Mobile band approximation: stacked images -->
+    <mj-section background-color="#ffffff" padding="10px 0">
       <mj-column>
-        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/70af4d47b795_78e7639f6139_ae1ab5ee8b53_biktarvy_logo.png" width="250px" padding="0px" />
-        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/84c8e4925344_d4e7c662e705_028ad8eed8a2_050793a13eec_download.png" width="250px" padding="10px 0 0 0" />
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/70af4d47b795_78e7639f6139_ae1ab5ee8b53_biktarvy_logo.png" width="250px" padding="10px 25px" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffffff" padding="10px 0">
+      <mj-column>
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/84c8e4925344_d4e7c662e705_028ad8eed8a2_050793a13eec_download.png" width="250px" padding="10px 25px" />
       </mj-column>
     </mj-section>
 
     <!-- GileadPro banner -->
-    <mj-section background-color="#ffffff" padding="10px 25px">
+    <mj-section background-color="#ffffff" padding="10px 0">
       <mj-column>
-        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/1bc1b12caa4f_19df42e3c070_89b901d5e902_gilead_pro.png" width="550px" padding="0px" />
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/1bc1b12caa4f_19df42e3c070_89b901d5e902_gilead_pro.png" width="550px" padding="10px 25px" />
       </mj-column>
     </mj-section>
 
-    <!-- Footnotes (HIVTSQ definition and related) -->
-    <mj-section background-color="#ffffff" padding="5px 25px">
+    <!-- Footnotes (HIVTSQ definition etc.) -->
+    <mj-section background-color="#ffffff" padding="5px 0">
       <mj-column>
-        <mj-text font-size="10px" line-height="15px" color="#707070" font-weight="normal" font-family="Arial, sans-serif">
+        <mj-text font-size="10px" line-height="15px" color="#707070" font-weight="normal" font-family="Arial, sans-serif" padding="5px 25px">
           <sup>*</sup>La adherencia subóptima se definió como un informe de ≥1 razón por la que faltó al tratamiento antirretroviral ≥5 veces en el último mes.
-          Datos de encuestas de adultos VIH+ confirmados en tratamiento antirretroviral en 25 países durante 2019 (EE. UU. [n = 400], Sudáfrica [n = 179], Rusia [n = 150], Reino Unido [n = 123], Australia [n = 120], Canadá [n = 120], Francia [n = 120], Alemania [n = 120], Italia [n = 120], España [n = 120], Japón [n = 75], México [n = 63], Portugal [n = 60], Brasil [n=58], Suiza [n=55], Taiwán [n=55], Países Bajos [n=51], Argentina [n=50], Austria [n=50], Bélgica [n=50], Chile [n=50], China [n=50], Irlanda [n=50], Polonia [n=50] y Corea del Sur [n=50]); La no supresión virológica fue autoinformada.; <sup>†</sup>Revisión sistemática donde se describen las mutaciones de resistencia y fracasos virológicos observados con los últimos INI aprobados: dolutegravir, bictegravir y cabotegravir. La revisión sistemática se llevó a cabo siguiendo los estándares habituales y, adicionalmente, se aplicaron las directrices de PRISMA.
+          Datos de encuestas de adultos VIH+ confirmados en tratamiento antirretroviral en 25 países durante 2019 (EE. UU. [n = 400], Sudáfrica [n = 179], Rusia [n = 150], Reino Unido [n = 123], Australia [n = 120], Canadá [n = 120], Francia [n = 120], Alemania [n = 120], Italia [n = 120], España [n = 120], Japón [n = 75], México [n = 63], Portugal [n = 60], Brasil [n=58], Suiza [n=55], Taiwán [n=55], Países Bajos [n=51], Argentina [n=50], Austria [n=50], Bélgica [n=50], Chile [n=50], China [n=50], Irlanda [n=50], Polonia [n=50] y Corea del Sur [n=50]); La no supresión virológica fue autoinformada.;
+          <sup>†</sup>Revisión sistemática donde se describen las mutaciones de resistencia y fracasos virológicos observados con los últimos INI aprobados: dolutegravir, bictegravir y cabotegravir. La revisión sistemática se llevó a cabo siguiendo los estándares habituales y, adicionalmente, se aplicaron las directrices de PRISMA.
         </mj-text>
       </mj-column>
     </mj-section>
 
     <!-- Abbreviations -->
-    <mj-section background-color="#ffffff" padding="5px 25px">
+    <mj-section background-color="#ffffff" padding="5px 0">
       <mj-column>
-        <mj-text font-size="10px" line-height="15px" color="#707070" font-weight="normal" font-family="Arial, sans-serif">
+        <mj-text font-size="10px" line-height="15px" color="#707070" font-weight="normal" font-family="Arial, sans-serif" padding="5px 25px">
           <b>IC</b>: intervalo de confianza; <b>INI</b>: inhibidor de integrasa; <b>OR</b>: odds ratio; <b>TAR</b>: tratamiento antirretroviral; <b>VIH</b>: virus de inmunodeficiencia humana
         </mj-text>
       </mj-column>
     </mj-section>
 
     <!-- Bibliography -->
-    <mj-section background-color="#ffffff" padding="5px 25px">
+    <mj-section background-color="#ffffff" padding="5px 0">
       <mj-column>
-        <mj-text font-size="10px" line-height="15px" color="#707070" font-weight="normal" font-family="Arial, sans-serif">
+        <mj-text font-size="10px" line-height="15px" color="#707070" font-weight="normal" font-family="Arial, sans-serif" padding="5px 25px">
           <b>BIBLIOGRAFÍA:</b> 1. McComsey G.A, et al. Real-World Adherence to Antiretroviral Therapy Among HIV-1 Patients Across the United States. Adv Ther. 2021 Sep;38(9):4961-4974. doi: 10.1007/s12325-021-01883-8.; 2. Carr A, et al. HIV drug resistance in the era of contemporary antiretroviral therapy: A clinical perspective. Antivir Ther. 2023 Oct;28(5):1-15. doi: 10.1177/13596535231201162.; 3. de Los Rios P, et al. Prevalence, determinants, and impact of suboptimal adherence to HIV medication in 25 countries. Prev Med. 2020 Oct;139:106182. doi: 10.1016/j.ypmed.2020.106182.; 4. Blanco JL, et al. HIV-1 resistance and virological failure to treatment with the integrase inhibitors bictegravir, cabotegravir and dolutegravir: a systematic literature review. AIDS reviews. 2024.
         </mj-text>
       </mj-column>
     </mj-section>
 
     <!-- Gilead logo -->
-    <mj-section background-color="#ffffff" padding="10px 25px">
+    <mj-section background-color="#ffffff" padding="10px 0">
       <mj-column>
-        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/34f28675a572_588f5d96092d_858ffba93ad3_gilead_logo.png" width="120px" padding="0px" />
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/34f28675a572_588f5d96092d_858ffba93ad3_gilead_logo.png" width="120px" padding="10px 25px" align="center" />
       </mj-column>
     </mj-section>
 
-    <!-- Regulatory block gray (SmPC / medical info placeholder text) -->
-    <mj-section background-color="#e4e4e4" padding="15px 25px 5px 25px">
+    <!-- Product information / Medical info callout (includes reusable text) -->
+    <mj-section background-color="#e4e4e4" padding="15px 0 5px 0">
       <mj-column>
-        <mj-text font-size="10px" line-height="15px" color="#000000" font-weight="normal" font-family="Arial, sans-serif">
-          Consulte la ficha técnica completa de BIKTARVY disponible en los recursos oficiales y a través del servicio de información médica de Gilead. Para más información médica, contacte con el servicio de información médica de Gilead.
+        <mj-text font-size="10px" line-height="15px" color="#000000" font-weight="normal" font-family="Arial, sans-serif" padding="15px 25px 5px 25px">
+          Solicita aquí el acceso completo al contenido, materiales y recursos proporcionados por el equipo de información médica.
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Pharmacovigilance QR block -->
-    <mj-section background-color="#e4e4e4" padding="10px 25px">
-      <mj-column width="20%">
-        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/c89966fe2a64_0c1df1766ca1_af0b5d88ea22_barcode.gif" width="59px" padding="0px" />
+    <!-- Pharmacovigilance QR two-column grey bar -->
+    <mj-section background-color="#e4e4e4" padding="10px 0">
+      <mj-column width="25%">
+        <mj-image src="https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/c89966fe2a64_0c1df1766ca1_af0b5d88ea22_barcode.gif" width="59px" padding="10px 15px 0px 15px" />
       </mj-column>
-      <mj-column width="80%">
-        <mj-text font-size="10px" line-height="15px" color="#000000" font-weight="normal" font-family="Arial, sans-serif">
-          Para notificar sospechas de reacciones adversas, utilice los canales habilitados por las autoridades sanitarias o visite los sitios web de Gilead (por ejemplo, Gilead.es y GileadPro) donde encontrará información adicional sobre la notificación de acontecimientos adversos.
+      <mj-column width="75%">
+        <mj-text font-size="10px" line-height="15px" color="#000000" font-weight="normal" font-family="Arial, sans-serif" padding="10px 25px 10px 10px">
+          En caso de sospecha de reacción adversa asociada a alguno de nuestros medicamentos, notifíquela a través de www.gilead.es o del portal GileadPro, de acuerdo con los procedimientos locales de farmacovigilancia.
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Legal footer -->
-    <mj-section background-color="#edebe3" padding="10px 25px">
+    <!-- Legal disclaimer block -->
+    <mj-section background-color="#edebe3" padding="0px 0 0 0">
       <mj-column>
-        <mj-text font-size="10px" line-height="15px" color="#000000" font-weight="normal" font-family="Arial, sans-serif">
-          Este mensaje y sus archivos adjuntos van dirigidos exclusivamente a su destinatario y pueden contener información confidencial sometida a secreto profesional. No está permitida su comunicación, reproducción o distribución sin la autorización expresa de Gilead. Si usted no es el destinatario final, por favor elimínelo e infórmenos por esta vía. En materia de protección de datos, puede ejercer sus derechos ante el responsable del tratamiento según la normativa aplicable y, en caso necesario, ante la Agencia Española de Protección de Datos (AEPD).
+        <mj-text font-size="10px" line-height="15px" color="#000000" font-weight="normal" font-family="Arial, sans-serif" padding="10px 25px">
+          Este mensaje contiene información dirigida exclusivamente a profesionales sanitarios. Si usted ha recibido este correo por error, le rogamos que lo elimine y comunique la incidencia al remitente. Los datos personales serán tratados de acuerdo con la normativa vigente en materia de protección de datos.
         </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Bottom divider -->
+    <mj-section background-color="#e4e4e4" padding="10px 25px 0px 0px">
+      <mj-column>
+        <mj-divider border-color="#cf0a2b" border-width="4px" padding="0px" />
       </mj-column>
     </mj-section>
   </mj-body>

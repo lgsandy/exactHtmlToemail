@@ -1,9 +1,9 @@
 {
-  "brandName": "BIKTARVY / Gilead HIV HCP email",
+  "brandName": "BIKTARVY® (Gilead) HIV email – HCP medical information",
   "colors": {
     "primaryColor": "#CF0A2C",
-    "secondaryColor": "#edebe3",
-    "accentColor": "#e4e4e4",
+    "secondaryColor": "#c00000",
+    "accentColor": "#e00707",
     "backgroundColor": "#ffffff",
     "containerBgColor": "#ffffff",
     "textColor": "#000000",
@@ -12,11 +12,11 @@
   "preheader": null,
   "typography": {
     "fontFamily": "Arial, sans-serif",
-    "baseFontSize": "12px",
+    "baseFontSize": "13px",
     "baseLineHeight": "15px",
     "header1": {
       "fontSize": "23px",
-      "lineHeight": "23px",
+      "lineHeight": "1",
       "color": "#000000",
       "fontWeight": "400"
     },
@@ -27,8 +27,8 @@
       "fontWeight": "700"
     },
     "header3": {
-      "fontSize": "13px",
-      "lineHeight": "15px",
+      "fontSize": "12px",
+      "lineHeight": "14px",
       "color": "#000000",
       "fontWeight": "400"
     }
@@ -36,13 +36,13 @@
   "layout": {
     "maxContainerWidth": "600px",
     "sectionPaddingDesktop": "20px 0",
-    "sectionPaddingMobile": "10px 0"
+    "sectionPaddingMobile": "varies by .section_* override, commonly 10px 25px"
   },
   "components": {
     "headerBanner": {
       "hasBanner": true,
       "backgroundImageUrlPattern": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/bg-1760607403292-1770358489191-1770366913367-1776398001082-1776501869027.png",
-      "padding": "90px 20px 111px 0px",
+      "padding": "top:90px; right:20px; bottom:111px; left:0 (outer td), inner text block 60px 25px 70px 25px",
       "height": null,
       "titleColor": "#000000",
       "titleSize": "23px"
@@ -67,21 +67,21 @@
     "bulletList": {
       "bulletCharacter": "•",
       "bulletColor": "#000000",
-      "fontSize": "12px",
-      "lineHeight": "15px",
-      "indentation": "0px"
+      "fontSize": "10px",
+      "lineHeight": "13px",
+      "indentation": "default email client; explicit margins reset to 0"
     },
     "divider": {
       "color": "#cf0a2b",
-      "thickness": "2px",
-      "margin": "0px auto"
+      "thickness": "2px (content divider) and 4px (footer top rule #e00707)",
+      "margin": "0 auto; width:100%"
     },
     "footer": {
       "backgroundColor": "#e4e4e4",
       "textColor": "#000000",
       "fontSize": "10px",
       "lineHeight": "15px",
-      "padding": "10px 25px",
+      "padding": "10px 25px (within grey blocks); outer sections 20px 0",
       "alignment": "left"
     }
   },
@@ -91,272 +91,312 @@
       "url": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/bg-1760607403292-1770358489191-1770366913367-1776398001082-1776501869027.png",
       "width": "600",
       "alt": null,
-      "purpose": "Hero background image for top banner"
+      "purpose": "Top hero/header background image behind main headline"
     },
     {
       "id": "chart_low_adherence",
       "url": "https://d34j9aw1sdq1f5.cloudfront.net/components/2b4538fd-51d3-4710-94be-f43d4433f6cb/b3df53e6-de66-4482-b328-091b346bc33a/17491_1_0.png",
       "width": "550",
       "alt": null,
-      "purpose": "Chart showing suppression in low adherence participants"
+      "purpose": "Main body chart/graphic for low adherence virologic suppression"
     },
     {
       "id": "chart_rapid_start",
       "url": "https://d34j9aw1sdq1f5.cloudfront.net/components/a304eb3f-0f37-4d68-a5c9-303be46f4b90/7a0c1590-2b8b-4cdd-b752-0e8650e0f87c/17479_1_0.png",
       "width": "550",
       "alt": null,
-      "purpose": "Chart showing suppression at weeks 24 and 48"
+      "purpose": "Body chart/graphic for rapid start efficacy and suppression"
     },
     {
-      "id": "biktarvy_logo_desktop",
+      "id": "footer_brand_logo_desktop",
       "url": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/70af4d47b795_78e7639f6139_ae1ab5ee8b53_biktarvy_logo.png",
       "width": "149",
       "alt": null,
-      "purpose": "Biktarvy logo in desktop 3-column footer"
+      "purpose": "BIKTARVY logo in three-column footer (desktop) left-center"
     },
     {
-      "id": "download_icon_desktop",
+      "id": "footer_download_icon_desktop",
       "url": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/84c8e4925344_d4e7c662e705_028ad8eed8a2_050793a13eec_download.png",
       "width": "149",
       "alt": null,
-      "purpose": "Download icon/button graphic in desktop 3-column footer"
+      "purpose": "Download or resources icon next to BIKTARVY logo in three-column footer (desktop)"
     },
     {
-      "id": "biktarvy_logo_mobile",
+      "id": "footer_brand_logo_mobile",
       "url": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/70af4d47b795_78e7639f6139_ae1ab5ee8b53_biktarvy_logo.png",
       "width": "250",
       "alt": null,
-      "purpose": "Biktarvy logo in mobile 2-column footer"
+      "purpose": "BIKTARVY logo shown in mobile-optimized two-column footer"
     },
     {
-      "id": "download_icon_mobile",
+      "id": "footer_download_icon_mobile",
       "url": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/84c8e4925344_d4e7c662e705_028ad8eed8a2_050793a13eec_download.png",
       "width": "250",
       "alt": null,
-      "purpose": "Download icon/button graphic in mobile 2-column footer"
+      "purpose": "Download/resources icon shown in mobile-optimized two-column footer"
     },
     {
       "id": "gileadpro_banner",
       "url": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/1bc1b12caa4f_19df42e3c070_89b901d5e902_gilead_pro.png",
       "width": "550",
       "alt": null,
-      "purpose": "GileadPro promotional banner"
+      "purpose": "Promotional banner for GileadPro portal near lower body"
     },
     {
-      "id": "gilead_logo",
+      "id": "gilead_corporate_logo",
       "url": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/34f28675a572_588f5d96092d_858ffba93ad3_gilead_logo.png",
       "width": "120",
       "alt": null,
-      "purpose": "Gilead corporate logo near footer"
+      "purpose": "Gilead corporate logo above grey legal/PI blocks"
     },
     {
       "id": "barcode_qr",
       "url": "https://d936lhxp4lgiz.cloudfront.net/873e70d2274a831c42320b777e100e9dd74f0ea3/c89966fe2a64_0c1df1766ca1_af0b5d88ea22_barcode.gif",
       "width": "59",
       "alt": null,
-      "purpose": "Barcode/QR image for pharmacovigilance reporting"
+      "purpose": "Barcode/QR image for adverse event reporting section"
     }
   ],
   "structure": [
     {
       "sectionId": "hero_banner",
       "componentType": "header_banner",
-      "backgroundColor": "#ffffff",
-      "padding": "20px 0 20px 0",
+      "backgroundColor": "#ffffff (hero table uses background image)",
+      "padding": "outer wrapper 20px 0; inner hero td 90px top, 20px right, 111px bottom",
       "associatedAssetId": "hero_background",
-      "contentSummary": "Hero banner with background image and main title 'Información médica y bibliografía de BIKTARVY® para profesionales'."
+      "contentSummary": "Hero with background image and main headline: 'Información médica y bibliografía de BIKTARVY® para profesionales'."
     },
     {
-      "sectionId": "greeting",
+      "sectionId": "greeting_block",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
-      "padding": "20px 0",
+      "padding": "10px 25px",
       "associatedAssetId": null,
-      "contentSummary": "Personalized greeting line 'Estimado Dr./Dra {{accLname}}'."
+      "contentSummary": "Personalized salutation: 'Estimado Dr./Dra {{accLname}}'."
     },
     {
-      "sectionId": "intro_present_future",
+      "sectionId": "subheadline_present_future",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
-      "padding": "0px 0",
+      "padding": "5px 25px",
       "associatedAssetId": null,
-      "contentSummary": "Intro text about present and future uncertainties with red-highlighted words."
+      "contentSummary": "Short teaser text: 'Un PRESENTE y un FUTURO llenos de incertidumbres' with words PRESENTE/FUTURO in primary red."
     },
     {
-      "sectionId": "intro_patient_question",
+      "sectionId": "subheadline_patient_question",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
-      "padding": "0px 0",
+      "padding": "5px 25px",
       "associatedAssetId": null,
-      "contentSummary": "Question about newly diagnosed patient with red-highlighted 'PACIENTE'."
+      "contentSummary": "Question: '¿QUÉ SABES DE TU PACIENTE RECIÉN DIAGNOSTICADO?' with key word PACIENTE in red."
     },
     {
-      "sectionId": "claim_forgiveness_highlight",
+      "sectionId": "claim_red_banner_forgiveness",
       "componentType": "callout_box",
       "backgroundColor": "#CF0A2C",
       "padding": "5px 25px",
       "associatedAssetId": null,
-      "contentSummary": "Centered white text claim about BIKTARVY forgiveness superior to DTG."
+      "contentSummary": "Centered bold white/red banner claim about BIKTARVY® higher forgiveness vs DTG and long-term treatment success."
     },
     {
-      "sectionId": "claim_adherence_uncertainty",
+      "sectionId": "claim_text_adherence_uncertainty",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
-      "padding": "0px 0",
+      "padding": "5px 25px",
       "associatedAssetId": null,
-      "contentSummary": "Text claim about BIKTARVY responding in PVIH with adherence uncertainties."
+      "contentSummary": "Body claim explaining BIKTARVY® responds in PWH with adherence uncertainties, key terms in red."
     },
     {
-      "sectionId": "claim_long_term_success",
+      "sectionId": "claim_text_high_forgiveness",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
-      "padding": "0px 0",
+      "padding": "5px 25px",
       "associatedAssetId": null,
-      "contentSummary": "Text about high forgiveness implications for long-term treatment success."
+      "contentSummary": "Body text about high forgiveness of BIKTARVY® and implications for long-term success."
     },
     {
-      "sectionId": "subheader_low_adherence",
+      "sectionId": "heading_low_adherence_suppression",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
-      "padding": "0px 0",
+      "padding": "5px 25px",
       "associatedAssetId": null,
-      "contentSummary": "Subheader about virologic suppression in participants with low adherence."
+      "contentSummary": "Heading: 'SUPRESIÓN VIROLÓGICA EN PARTICIPANTES CON BAJA ADHERENCIA (<85%)' with highlighted red terms."
     },
     {
       "sectionId": "image_low_adherence_chart",
       "componentType": "image_block",
       "backgroundColor": "#ffffff",
-      "padding": "0px 0",
+      "padding": "10px 25px",
       "associatedAssetId": "chart_low_adherence",
-      "contentSummary": "Chart image for suppression in low adherence participants."
+      "contentSummary": "Inline chart/graph visual supporting low adherence suppression claim."
     },
     {
-      "sectionId": "claim_rapid_start_summary",
+      "sectionId": "claim_rapid_start_main",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
-      "padding": "0px 0",
+      "padding": "5px 25px 20px",
       "associatedAssetId": null,
-      "contentSummary": "Bold red centered text about rapid start efficacy, safety, satisfaction, and QoL."
+      "contentSummary": "Centered bold red claim: in rapid start BIKTARVY® offers efficacy, safety, high satisfaction and QoL improvements."
     },
     {
       "sectionId": "claim_rapid_start_discontinuations",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
-      "padding": "0px 0",
+      "padding": "5px 25px",
       "associatedAssetId": null,
-      "contentSummary": "Text about low discontinuation rates due to adverse events with rapid start."
+      "contentSummary": "Body text: rapid start with BIKTARVY® led to low discontinuations due to adverse events."
     },
     {
-      "sectionId": "subheader_rapid_start_suppression",
+      "sectionId": "heading_itt_suppression_week24_48",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
-      "padding": "0px 0",
+      "padding": "5px 25px",
       "associatedAssetId": null,
-      "contentSummary": "Subheader about PVIH achieving virologic suppression at weeks 24 and 48."
+      "contentSummary": "Heading about PWH who achieved virologic suppression at weeks 24 and 48 in ITT analyses."
     },
     {
       "sectionId": "image_rapid_start_chart",
       "componentType": "image_block",
       "backgroundColor": "#ffffff",
-      "padding": "0px 0",
+      "padding": "10px 25px",
       "associatedAssetId": "chart_rapid_start",
-      "contentSummary": "Chart image for suppression at weeks 24 and 48."
+      "contentSummary": "Inline image/graph visualizing week 24/48 suppression outcomes."
     },
     {
-      "sectionId": "primary_cta",
+      "sectionId": "primary_cta_button",
       "componentType": "cta_button",
       "backgroundColor": "#ffffff",
-      "padding": "20px 0",
+      "padding": "10px 25px 30px 24px",
       "associatedAssetId": null,
-      "contentSummary": "Centered red button 'Learn More' linking to external site."
+      "contentSummary": "Primary CTA button centered: 'Learn More' linking to https://www.test.com with red background and white text."
     },
     {
-      "sectionId": "divider_red_top",
+      "sectionId": "divider_red_line",
       "componentType": "divider",
       "backgroundColor": "#ffffff",
-      "padding": "0px 0",
+      "padding": "0px",
       "associatedAssetId": null,
-      "contentSummary": "Full-width red horizontal rule divider."
+      "contentSummary": "Full-width horizontal red divider line (#cf0a2b, 2px) separating main content from brand/footer area."
     },
     {
-      "sectionId": "footer_logos_desktop",
+      "sectionId": "footer_brand_resources_desktop",
       "componentType": "image_block",
       "backgroundColor": "#ffffff",
-      "padding": "20px 0 5px 0",
-      "associatedAssetId": "biktarvy_logo_desktop",
-      "contentSummary": "Desktop 3-column row with Biktarvy logo and download icon."
+      "padding": "10px 25px 10px 25px (center column; wrapper 20px 0 5px)",
+      "associatedAssetId": "footer_brand_logo_desktop",
+      "contentSummary": "Desktop-only three-column row: center column shows BIKTARVY logo; right column shows download/resources icon."
     },
     {
-      "sectionId": "footer_logos_mobile",
+      "sectionId": "footer_brand_resources_desktop_download",
       "componentType": "image_block",
       "backgroundColor": "#ffffff",
-      "padding": "20px 0 5px 0",
-      "associatedAssetId": "biktarvy_logo_mobile",
-      "contentSummary": "Mobile 2-column row with Biktarvy logo and download icon."
+      "padding": "10px 25px",
+      "associatedAssetId": "footer_download_icon_desktop",
+      "contentSummary": "Desktop-only: download/resources icon adjacent to brand logo."
+    },
+    {
+      "sectionId": "footer_brand_resources_mobile_logo",
+      "componentType": "image_block",
+      "backgroundColor": "#ffffff",
+      "padding": "10px 25px",
+      "associatedAssetId": "footer_brand_logo_mobile",
+      "contentSummary": "Mobile-only two-column row: left column BIKTARVY logo."
+    },
+    {
+      "sectionId": "footer_brand_resources_mobile_download",
+      "componentType": "image_block",
+      "backgroundColor": "#ffffff",
+      "padding": "10px 25px",
+      "associatedAssetId": "footer_download_icon_mobile",
+      "contentSummary": "Mobile-only: right column download/resources icon."
     },
     {
       "sectionId": "gileadpro_banner_section",
       "componentType": "image_block",
       "backgroundColor": "#ffffff",
-      "padding": "10px 0 10px 0",
+      "padding": "10px 25px",
       "associatedAssetId": "gileadpro_banner",
-      "contentSummary": "Full-width GileadPro banner image."
+      "contentSummary": "Full-width GileadPro promotional banner image linking conceptually to HCP portal."
     },
     {
-      "sectionId": "footnote_forgiveness",
+      "sectionId": "footnote_block_main",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
-      "padding": "5px 0",
+      "padding": "5px 25px",
       "associatedAssetId": null,
-      "contentSummary": "First block of small grey footnote text with symbols †, €, *, ¶."
+      "contentSummary": "Extended fine-print explanatory footnotes for symbols †, €, *, ¶ (forgiveness, adherence analyses, etc.) in grey text (#707070)."
     },
     {
       "sectionId": "footnote_abbreviations",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
-      "padding": "5px 0",
+      "padding": "5px 25px",
       "associatedAssetId": null,
-      "contentSummary": "Abbreviation definitions for DTG, PVIH, AA, ITT."
+      "contentSummary": "Definitions of abbreviations: DTG, PVIH, AA, ITT in grey text."
     },
     {
       "sectionId": "footnote_bibliography",
       "componentType": "text_block",
       "backgroundColor": "#ffffff",
-      "padding": "5px 0",
+      "padding": "5px 25px",
       "associatedAssetId": null,
-      "contentSummary": "Bibliography references 1 and 2."
+      "contentSummary": "Bibliography references 1 and 2 with full citation details."
     },
     {
       "sectionId": "gilead_logo_section",
       "componentType": "image_block",
       "backgroundColor": "#ffffff",
-      "padding": "10px 0 10px 0",
-      "associatedAssetId": "gilead_logo",
-      "contentSummary": "Centered Gilead corporate logo."
+      "padding": "10px 25px",
+      "associatedAssetId": "gilead_corporate_logo",
+      "contentSummary": "Centered Gilead corporate logo above regulatory and privacy notice blocks."
     },
     {
-      "sectionId": "regulatory_block_grey",
-      "componentType": "callout_box",
+      "sectionId": "regulatory_grey_block_top",
+      "componentType": "text_block",
       "backgroundColor": "#e4e4e4",
       "padding": "15px 25px 5px 25px",
       "associatedAssetId": null,
-      "contentSummary": "Grey box with SmPC link, code ES-BVY-XXXX, and medical information service contacts."
+      "contentSummary": "Grey box: link to BIKTARVY® prescribing information PDF and reference code ES-BVY-XXXX Abril 2026, plus medical information contact details."
     },
     {
-      "sectionId": "pharmacovigilance_qr",
-      "componentType": "callout_box",
+      "sectionId": "pharmacovigilance_barcode_row",
+      "componentType": "image_block",
       "backgroundColor": "#e4e4e4",
-      "padding": "10px 0 5px 0",
+      "padding": "10px 15px 0px 15px (image) and 10px 10px (text)",
       "associatedAssetId": "barcode_qr",
-      "contentSummary": "Grey bar with QR/barcode and text about reporting adverse reactions with links."
+      "contentSummary": "Barcode/QR with explanatory text on how to report adverse reactions, including links to gilead.es and GileadPro pharmacovigilance."
     },
     {
-      "sectionId": "legal_disclaimer_block",
-      "componentType": "footer",
-      "backgroundColor": "#edebe3",
-      "padding": "0px 0 0px 0",
+      "sectionId": "pharmacovigilance_text",
+      "componentType": "text_block",
+      "backgroundColor": "#e4e4e4",
+      "padding": "10px 10px 10px 10px",
       "associatedAssetId": null,
-      "contentSummary": "Extended legal and data protection disclaimer text with unsubscribe and AEPD link, plus final red divider."
+      "contentSummary": "Text describing how to communicate suspected adverse reactions, with URLs."
+    },
+    {
+      "sectionId": "legal_privacy_notice_block",
+      "componentType": "footer",
+      "backgroundColor": "#edebe3 (outer) / #e4e4e4 (inner)",
+      "padding": "10px 25px",
+      "associatedAssetId": null,
+      "contentSummary": "Data protection and consent legal notice regarding commercial emails, rights of data subjects, and regulatory authority link, all in 10px text within grey box."
+    },
+    {
+      "sectionId": "legal_confidentiality_notice_block",
+      "componentType": "footer",
+      "backgroundColor": "#e4e4e4",
+      "padding": "0px 25px 10px 25px",
+      "associatedAssetId": null,
+      "contentSummary": "Confidentiality statement about the email and instructions if received in error."
+    },
+    {
+      "sectionId": "footer_bottom_red_rule",
+      "componentType": "divider",
+      "backgroundColor": "#e4e4e4",
+      "padding": "10px 0px 0px 0px",
+      "associatedAssetId": null,
+      "contentSummary": "Thick red bottom rule (#e00707, 4px) closing the email footer."
     }
   ]
 }

@@ -1,5 +1,5 @@
 import { createAzure } from '@ai-sdk/azure';
-import { generateObject } from 'ai';
+import { generateText, Output } from 'ai';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
@@ -26,7 +26,7 @@ const designTokenSchema = z.object({
     fontSize: z.string().describe('Font size of the preheader text (e.g. "10px")'),
     lineHeight: z.string().describe('Line height of the preheader text (e.g. "13px")'),
     padding: z.string().describe('Padding of the preheader section (e.g. "10px 25px")'),
-  }).nullish().describe('The top preheader styling and default notice details, or null if there is no preheader text block/bar at the very top of the email'),
+  }).nullable().describe('The top preheader styling and default notice details, or null if there is no preheader text block/bar at the very top of the email'),
   typography: z.object({
     fontFamily: z.string().describe('Primary font family (e.g. Arial, Georgia, sans-serif)'),
     baseFontSize: z.string().describe('Default body font size (e.g. 13px, 14px)'),
@@ -58,17 +58,17 @@ const designTokenSchema = z.object({
   components: z.object({
     headerBanner: z.object({
       hasBanner: z.boolean(),
-      backgroundImageUrlPattern: z.string().nullish().describe('Example or placeholder URL of the banner background image if used'),
-      padding: z.string().nullish(),
-      height: z.string().nullish(),
-      titleColor: z.string().nullish(),
-      titleSize: z.string().nullish(),
+      backgroundImageUrlPattern: z.string().nullable().describe('Example or placeholder URL of the banner background image if used'),
+      padding: z.string().nullable(),
+      height: z.string().nullable(),
+      titleColor: z.string().nullable(),
+      titleSize: z.string().nullable(),
     }).describe('Top header banner block style'),
     calloutBox: z.object({
       backgroundColor: z.string(),
       borderRadius: z.string(),
-      borderColor: z.string().nullish(),
-      borderWidth: z.string().nullish(),
+      borderColor: z.string().nullable(),
+      borderWidth: z.string().nullable(),
       padding: z.string(),
       textColor: z.string(),
     }).describe('Style details for callout/highlight sections'),
@@ -106,7 +106,7 @@ const designTokenSchema = z.object({
     id: z.string().describe('Unique identifier for this asset, e.g. "header_logo", "hero_banner", "chart_flowchart", "footer_logo"'),
     url: z.string().describe('The src URL of the image'),
     width: z.string().describe('Width attribute of the image (e.g. "600", "263")'),
-    alt: z.string().nullish().describe('Alt text if any'),
+    alt: z.string().nullable().describe('Alt text if any'),
     purpose: z.string().describe('Brief description of what this image is and its location in the email template'),
   })).describe('List of all images/graphics used in the email template'),
   structure: z.array(z.object({
@@ -114,7 +114,7 @@ const designTokenSchema = z.object({
     componentType: z.enum(['preheader', 'header_banner', 'text_block', 'image_block', 'callout_box', 'bullet_list', 'cta_button', 'divider', 'footer']).describe('The structural component type'),
     backgroundColor: z.string().describe('Background color of this section container'),
     padding: z.string().describe('Padding configuration of this section'),
-    associatedAssetId: z.string().nullish().describe('If this section displays an image, specify the asset ID from the assets registry'),
+    associatedAssetId: z.string().nullable().describe('If this section displays an image, specify the asset ID from the assets registry'),
     contentSummary: z.string().describe('Brief summary of the textual content, title, or intent of this section in the template (e.g. Gilead disclaimer text, "Of patients with known outcomes..." headline)'),
   })).describe('Ordered structure of layout sections in the email from top to bottom'),
 });
@@ -149,10 +149,14 @@ export async function extractTokens(htmlFilePath, outputJsonPath) {
 
   console.log('Sending HTML content to LLM to extract design tokens...');
 
-  const response = await generateObject({
+  const response = await generateText({
     model,
-    schema: designTokenSchema,
-    prompt: `Analyze the following pharma marketing email HTML template. 
+    output: Output.object({
+      name: 'DesignTokens',
+      description: 'Design system tokens extracted from a pharma marketing email HTML template',
+      schema: designTokenSchema,
+    }),
+    prompt: `Analyze the following pharma marketing email HTML template.
 Carefully extract its design system, visual styling rules, component configurations, typography specs, all visual image assets, and its overall section layout sequence into the structured design token format.
 
 Specifically look at and extract:
@@ -179,10 +183,10 @@ ${htmlContent}
 
   // Save the extracted tokens to file
   console.log(`Saving design tokens to ${outputJsonPath}...`);
-  fs.writeFileSync(outputJsonPath, JSON.stringify(response.object, null, 2), 'utf-8');
+  fs.writeFileSync(outputJsonPath, JSON.stringify(response.output, null, 2), 'utf-8');
   console.log('Design token extraction complete!');
 
-  return response.object;
+  return response.output;
 }
 
 // Running script directly from CLI
